@@ -235,6 +235,10 @@ input[type=number]:focus,
   box-shadow: none !important;
 }
 
+.active {
+  color: var(--bs-warning) !important;
+}
+
 input:focus::-moz-placeholder {
   opacity: 0;
   -moz-transition: 0.4s;
@@ -17148,3 +17152,5 @@ h2 span {
 }
 
 /*# sourceMappingURL=style.css.map */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
