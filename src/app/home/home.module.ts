@@ -7,6 +7,7 @@ import { TopSearchedDestinationComponent } from './components/top-searched-desti
 import { HeadComponent } from './components/head/head.component';
 import { NewestApartmentsComponent } from './components/newest-apartments/newest-apartments.component';
 import { TrendingDestinationsComponent } from './components/trending-destination/trending-destinations.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -15,11 +16,12 @@ import { TrendingDestinationsComponent } from './components/trending-destination
     TopSearchedDestinationComponent,
     HeadComponent,
     NewestApartmentsComponent,
-    TrendingDestinationsComponent
+    TrendingDestinationsComponent,
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
   ]
 })
 export class HomeModule { }
