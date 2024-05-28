@@ -27,8 +27,17 @@
         </div>
         <div class="item-search item-search-2">
           <label class="text-sm-bold neutral-500">Check In - Check out</label>
-          <div class="box-calendar-date">
-            <input class="search-input datepicker" type="text" placeholder="">
+          <!-- <div class="box-calendar-date"> -->
+          <div>
+            <mat-form-field class="test">
+              <mat-date-range-input [rangePicker]="picker" [formGroup]="form" [min]="minDate">
+                <input matStartDate formControlName="start" placeholder="Start date">
+                <input matEndDate formControlName="end" placeholder="End date" (dateChange)="calculateTotalNights()">
+              </mat-date-range-input>
+              <mat-hint class="color-white">{{totalNights != null ? totalNights + " nights" : '' }} </mat-hint>
+              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-date-range-picker touchUi #picker disabled="false"></mat-date-range-picker>
+            </mat-form-field>
           </div>
         </div>
         <div class="item-search bd-none">
