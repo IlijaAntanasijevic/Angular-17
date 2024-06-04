@@ -9,6 +9,8 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,

@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-top-searched-destination',
@@ -10,19 +10,62 @@ export class TopSearchedDestinationComponent implements OnInit{
 
   destinations: any = [];
 
-  constructor(
-    private http: HttpClient
-  ){ }
 
   ngOnInit(): void {
       this.getDestinations();
   }
 
   getDestinations(): void {
-   this.http.get("assets/data/topSearchedDestinations.json").subscribe({
-      next: (data) => {
-        this.destinations = data;
+    this.destinations = [
+      {
+        id: 1,
+        title: "Venecie",
+        totalApartments: 220,
+        image: "assets/imgs/page/homepage6/destination.png"
+      },
+      {
+        id: 2,
+        title: "Amsterdam",
+        totalApartments: 120,
+        image: "assets/imgs/page/homepage6/destination.png"
+      },
+      {
+        id: 3,
+        title: "Budapest",
+        totalApartments: 356,
+        image: "assets/imgs/page/homepage6/destination.png"
+      },
+      {
+        id: 4,
+        title: "Lisbon",
+        totalApartments: 420,
+        image: "assets/imgs/page/homepage6/destination.png"
+      },
+      {
+        id: 5,
+        title: "London",
+        totalApartments: 330,
+        image: "assets/imgs/page/homepage6/destination.png"
+      },
+      {
+        id: 6,
+        title: "Ottawa",
+        totalApartments: 220,
+        image: "assets/imgs/page/homepage6/destination.png"
+      },
+      {
+        id: 7,
+        title: "Paris",
+        totalApartments: 220,
+        image: "assets/imgs/page/homepage6/destination.png"
+      },
+      {
+        id: 8,
+        title: "Nice",
+        totalApartments: 220,
+        image: "assets/imgs/page/homepage6/destination.png"
       }
-    })
+    ]
   }
+
 }
