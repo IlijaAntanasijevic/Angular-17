@@ -3586,10 +3586,6 @@ label {
   /* background: url(../imgs/template/icons/duration.svg) no-repeat left center; */
 }
 
-.card-journey-small .card-info .card-program .icon-guest {
-  padding: 0px 0px 0px 22px;
-  /* background: url(../imgs/template/icons/guest.svg) no-repeat left center; */
-}
 
 .card-journey-small .card-info .card-program .endtime {
   display: flex;
