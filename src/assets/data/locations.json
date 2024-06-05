@@ -17,6 +17,14 @@
   },
   {
     "id": 5,
+    "name": "Venice"
+  },
+  {
+    "id": 6,
+    "name": "New York"
+  },
+  {
+    "id": 7,
     "name": "London"
   }
 ]

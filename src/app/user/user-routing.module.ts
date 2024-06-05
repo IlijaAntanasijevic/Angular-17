@@ -6,10 +6,6 @@ const routes: Routes = [
     path: "",
     pathMatch: "full",
     redirectTo: "apartments"
-  },
-  {
-    path: "apartments",
-    loadChildren: () => import('./apartment/apartment.module').then(m => m.ApartmentModule)
   }
 ];
 

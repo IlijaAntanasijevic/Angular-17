@@ -39,7 +39,7 @@ export class HeadComponent implements OnInit {
   });
 
   ngOnInit() {
-    this.requestService.getAll().subscribe({
+    this.requestService.getAllLocations().subscribe({
       next: (data) => {
         this.options = data  
         this.initializeFilteredOptions();      

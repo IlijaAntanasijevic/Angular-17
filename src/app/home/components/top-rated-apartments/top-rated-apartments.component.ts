@@ -3,11 +3,11 @@ import { IApartment } from '../../interfaces/i-apartments';
 import { ApartmentsRequestsService } from '../../requests/apartments-requests.service';
 
 @Component({
-  selector: 'app-newest-apartments',
-  templateUrl: './newest-apartments.component.html',
-  styleUrl: './newest-apartments.component.css'
+  selector: 'app-top-rated-apartments',
+  templateUrl: './top-rated-apartments.html',
+  styleUrl: './top-rated-apartments.css'
 })
-export class NewestApartmentsComponent implements OnInit {
+export class TopRatedApartments implements OnInit {
  
   constructor(
     public requestService: ApartmentsRequestsService

@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "Wien",
+    "totalApartments": 680,
+    "imagePath": "assets/imgs/page/homepage6/trend.png"
+  },
+  {
+    "id": 2,
+    "name": "New York",
+    "totalApartments": 550,
+    "imagePath": "assets/imgs/page/homepage6/trend2.png"
+
+  },
+  {
+    "id": 3,
+    "name": "Venice",
+    "totalApartments": 490,
+    "imagePath": "assets/imgs/page/homepage6/trend3.png"
+
+  },
+  {
+    "id": 4,
+    "name": "Zurich",
+    "totalApartments": 410,
+    "imagePath": "assets/imgs/page/homepage6/trend4.png"
+
+  },
+  {
+    "id": 5,
+    "name": "London",
+    "totalApartments": 330,
+    "imagePath": "assets/imgs/page/homepage6/trend5.png"
+
+  }
+]
