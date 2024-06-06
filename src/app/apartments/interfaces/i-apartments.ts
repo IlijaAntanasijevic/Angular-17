@@ -1,4 +1,4 @@
-import { IBaseName } from "../../interfaces/i-base"
+import { IBaseName, IUser } from "../../interfaces/i-base"
 
 
 export interface IApartment extends IBaseName {
@@ -12,7 +12,8 @@ export interface IApartment extends IBaseName {
 
 export interface IApartmentDetail extends IApartment {
   location: string
-  images: string[]
-  user: object
+  images: object[]
+  user: IUser
   reviews: object[]
+  description: string
 }

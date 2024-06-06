@@ -7,10 +7,10 @@
             <div class="row align-items-center">
               <div class="col-xl-4 col-md-4 mb-10 text-lg-start text-center">
                 <div class="box-view-type">
-                  <span class="text-sm-bold neutral-500 number-found">64 apartments found</span>
+                  <span class="text-sm-bold neutral-500 number-found">{{totalApartments}} apartments found</span>
                 </div>
               </div>
-              <div class="col-xl-8 col-md-8 mb-10 text-lg-end text-center">
+              <!-- <div class="col-xl-8 col-md-8 mb-10 text-lg-end text-center">
                 <div class="box-item-sort"><a class="btn btn-sort" href="#">
                     <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.25 6L5.25 3M5.25 3L2.25 6M5.25 3L5.25 15" stroke="" stroke-width="1.5"
@@ -42,290 +42,60 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
-          <div class="box-list-tours list-tours wow fadeIn">
+          <div class="box-grid-tours list-tours wow fadeIn">
             <div class="row">
+
+
+              @for(apartment of apartments; track apartment){
               <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="card-journey-small background-card">
-                  <div class="card-image"> <a class="wish" href="#">
+                  <div class="card-image">
+                    <!-- Wish  -->
+                    <!-- <a class="wish" href="#">
                       <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
                           stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></a><img src="assets/imgs/page/tour/tour.png" alt="Travila"></div>
+                      </svg>
+                    </a> -->
+                    <img src="assets/imgs/page/tour/tour.png" alt="Travila">
+                  </div>
                   <div class="card-info background-card">
                     <div class="card-rating">
                       <div class="card-left"> </div>
-                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">(672
-                            reviews)</span></span></div>
+                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">
+                            ({{apartment.totalReviews}} reviews)</span></span></div>
                     </div>
-                    <div class="card-title"> <a class="text-lg-bold neutral-1000" href="#">1-Hour Bay Cruise by Boat in
-                        San Francisco </a></div>
+                    <div class="card-title">
+                      <a class="text-lg-bold neutral-1000" routerLink="/apartments/{{apartment.id}}">
+                        {{apartment.name}}
+                      </a>
+                    </div>
                     <div class="card-program">
                       <div class="card-duration-tour">
-                        <p class="icon-duration text-sm-medium neutral-500">2 days, 3 nights</p>
-                        <p class="icon-guest text-sm-medium neutral-500">6-8 guest</p>
+                        <p class="icon-duration text-sm-medium neutral-700">{{apartment.city}}</p>
+
+                        <p class="icon-duration text-sm-medium neutral-500">Guests: {{apartment.maxGuest}}</p>
                       </div>
                       <div class="endtime">
                         <div class="card-price">
-                          <h6 class="heading-6 neutral-1000">$48.25</h6>
+                          <h6 class="heading-6 neutral-1000">${{apartment.price}}</h6>
+                          <p class="text-md-medium neutral-500">/ night</p>
+
                         </div>
-                        <div class="card-button"> <a class="btn btn-gray" href="#">Book Now</a></div>
+                        <div class="card-button"> <a class="btn btn-gray"
+                            routerLink="/apartments/{{apartment.id}}">View</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="card-journey-small background-card">
-                  <div class="card-image"> <a class="wish" href="#">
-                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
-                          stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></a><img src="assets/imgs/page/tour/tour2.png" alt="Travila"></div>
-                  <div class="card-info background-card">
-                    <div class="card-rating">
-                      <div class="card-left"> </div>
-                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">(672
-                            reviews)</span></span></div>
-                    </div>
-                    <div class="card-title"> <a class="text-lg-bold neutral-1000" href="#">New York City: Manhattan
-                        Island Helicopter Tour</a></div>
-                    <div class="card-program">
-                      <div class="card-duration-tour">
-                        <p class="icon-duration text-sm-medium neutral-500">2 days, 3 nights</p>
-                        <p class="icon-guest text-sm-medium neutral-500">6-8 guest</p>
-                      </div>
-                      <div class="endtime">
-                        <div class="card-price">
-                          <h6 class="heading-6 neutral-1000">$48.25</h6>
-                        </div>
-                        <div class="card-button"> <a class="btn btn-gray" href="#">Book Now</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="card-journey-small background-card">
-                  <div class="card-image"> <a class="wish" href="#">
-                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
-                          stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></a><img src="assets/imgs/page/tour/tour3.png" alt="Travila"></div>
-                  <div class="card-info background-card">
-                    <div class="card-rating">
-                      <div class="card-left"> </div>
-                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">(672
-                            reviews)</span></span></div>
-                    </div>
-                    <div class="card-title"> <a class="text-lg-bold neutral-1000" href="#">Oahu: Private Surfing Lesson
-                        in Waikiki Beach</a></div>
-                    <div class="card-program">
-                      <div class="card-duration-tour">
-                        <p class="icon-duration text-sm-medium neutral-500">2 days, 3 nights</p>
-                        <p class="icon-guest text-sm-medium neutral-500">6-8 guest</p>
-                      </div>
-                      <div class="endtime">
-                        <div class="card-price">
-                          <h6 class="heading-6 neutral-1000">$48.25</h6>
-                        </div>
-                        <div class="card-button"> <a class="btn btn-gray" href="#">Book Now</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="card-journey-small background-card">
-                  <div class="card-image"> <a class="wish" href="#">
-                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
-                          stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></a><img src="assets/imgs/page/tour/tour4.png" alt="Travila"></div>
-                  <div class="card-info background-card">
-                    <div class="card-rating">
-                      <div class="card-left"> </div>
-                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">(672
-                            reviews)</span></span></div>
-                    </div>
-                    <div class="card-title"> <a class="text-lg-bold neutral-1000" href="#">Top of the Rock Observation
-                        Deck Ticket</a></div>
-                    <div class="card-program">
-                      <div class="card-duration-tour">
-                        <p class="icon-duration text-sm-medium neutral-500">2 days, 3 nights</p>
-                        <p class="icon-guest text-sm-medium neutral-500">6-8 guest</p>
-                      </div>
-                      <div class="endtime">
-                        <div class="card-price">
-                          <h6 class="heading-6 neutral-1000">$48.25</h6>
-                        </div>
-                        <div class="card-button"> <a class="btn btn-gray" href="#">Book Now</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="card-journey-small background-card">
-                  <div class="card-image"> <a class="wish" href="#">
-                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
-                          stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></a><img src="assets/imgs/page/tour/tour5.png" alt="Travila"></div>
-                  <div class="card-info background-card">
-                    <div class="card-rating">
-                      <div class="card-left"> </div>
-                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">(672
-                            reviews)</span></span></div>
-                    </div>
-                    <div class="card-title"> <a class="text-lg-bold neutral-1000" href="#">Honolulu: Diamond Head Cruise
-                        with Drinks </a></div>
-                    <div class="card-program">
-                      <div class="card-duration-tour">
-                        <p class="icon-duration text-sm-medium neutral-500">2 days, 3 nights</p>
-                        <p class="icon-guest text-sm-medium neutral-500">6-8 guest</p>
-                      </div>
-                      <div class="endtime">
-                        <div class="card-price">
-                          <h6 class="heading-6 neutral-1000">$48.25</h6>
-                        </div>
-                        <div class="card-button"> <a class="btn btn-gray" href="#">Book Now</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="card-journey-small background-card">
-                  <div class="card-image"> <a class="wish" href="#">
-                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
-                          stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></a><img src="assets/imgs/page/tour/tour6.png" alt="Travila"></div>
-                  <div class="card-info background-card">
-                    <div class="card-rating">
-                      <div class="card-left"> </div>
-                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">(672
-                            reviews)</span></span></div>
-                    </div>
-                    <div class="card-title"> <a class="text-lg-bold neutral-1000" href="#">Oahu: Private Surfing Lesson
-                        in Waikiki Beach</a></div>
-                    <div class="card-program">
-                      <div class="card-duration-tour">
-                        <p class="icon-duration text-sm-medium neutral-500">2 days, 3 nights</p>
-                        <p class="icon-guest text-sm-medium neutral-500">6-8 guest</p>
-                      </div>
-                      <div class="endtime">
-                        <div class="card-price">
-                          <h6 class="heading-6 neutral-1000">$48.25</h6>
-                        </div>
-                        <div class="card-button"> <a class="btn btn-gray" href="#">Book Now</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="card-journey-small background-card">
-                  <div class="card-image"> <a class="wish" href="#">
-                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
-                          stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></a><img src="assets/imgs/page/tour/tour7.png" alt="Travila"></div>
-                  <div class="card-info background-card">
-                    <div class="card-rating">
-                      <div class="card-left"> </div>
-                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">(672
-                            reviews)</span></span></div>
-                    </div>
-                    <div class="card-title"> <a class="text-lg-bold neutral-1000" href="#">Iceland: Landmannalaugar
-                        4-Hour Hiking Experience </a></div>
-                    <div class="card-program">
-                      <div class="card-duration-tour">
-                        <p class="icon-duration text-sm-medium neutral-500">2 days, 3 nights</p>
-                        <p class="icon-guest text-sm-medium neutral-500">6-8 guest</p>
-                      </div>
-                      <div class="endtime">
-                        <div class="card-price">
-                          <h6 class="heading-6 neutral-1000">$48.25</h6>
-                        </div>
-                        <div class="card-button"> <a class="btn btn-gray" href="#">Book Now</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="card-journey-small background-card">
-                  <div class="card-image"> <a class="wish" href="#">
-                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
-                          stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></a><img src="assets/imgs/page/tour/tour8.png" alt="Travila"></div>
-                  <div class="card-info background-card">
-                    <div class="card-rating">
-                      <div class="card-left"> </div>
-                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">(672
-                            reviews)</span></span></div>
-                    </div>
-                    <div class="card-title"> <a class="text-lg-bold neutral-1000" href="#">San Francisco: California
-                        Sunset/Twilight</a></div>
-                    <div class="card-program">
-                      <div class="card-duration-tour">
-                        <p class="icon-duration text-sm-medium neutral-500">2 days, 3 nights</p>
-                        <p class="icon-guest text-sm-medium neutral-500">6-8 guest</p>
-                      </div>
-                      <div class="endtime">
-                        <div class="card-price">
-                          <h6 class="heading-6 neutral-1000">$48.25</h6>
-                        </div>
-                        <div class="card-button"> <a class="btn btn-gray" href="#">Book Now</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="card-journey-small background-card">
-                  <div class="card-image"> <a class="wish" href="#">
-                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
-                          stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></a><img src="assets/imgs/page/tour/tour9.png" alt="Travila"></div>
-                  <div class="card-info background-card">
-                    <div class="card-rating">
-                      <div class="card-left"> </div>
-                      <div class="card-right"> <span class="rating">4.96 <span class="text-sm-medium neutral-500">(672
-                            reviews)</span></span></div>
-                    </div>
-                    <div class="card-title"> <a class="text-lg-bold neutral-1000" href="#">California Academy of
-                        Sciences Entry Ticket </a></div>
-                    <div class="card-program">
-                      <div class="card-duration-tour">
-                        <p class="icon-duration text-sm-medium neutral-500">2 days, 3 nights</p>
-                        <p class="icon-guest text-sm-medium neutral-500">6-8 guest</p>
-                      </div>
-                      <div class="endtime">
-                        <div class="card-price">
-                          <h6 class="heading-6 neutral-1000">$48.25</h6>
-                        </div>
-                        <div class="card-button"> <a class="btn btn-gray" href="#">Book Now</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              }
+
             </div>
           </div>
           <nav aria-label="Page navigation example">

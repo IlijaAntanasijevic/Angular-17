@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ApartmentsRequestsService } from '../../requests/apartments-requests.service';
-import { IApartmentDetail } from '../../interfaces/i-apartments';
+import { ApartmentsRequestsService } from '../../../requests/apartments-requests.service';
+import { IApartmentDetail } from '../../../interfaces/i-apartments';
 
 @Component({
   selector: 'app-apartment-detail',
@@ -9,14 +9,14 @@ import { IApartmentDetail } from '../../interfaces/i-apartments';
   styleUrl: './apartment-detail.component.css'
 })
 export class ApartmentDetailComponent implements OnInit {
-
   id: number;
   apartment: IApartmentDetail;
+  sliderImages: any;
   constructor(
     private route: ActivatedRoute,
     private requestService: ApartmentsRequestsService
   ){}
-
+  
 
   
   ngOnInit(): void {
@@ -24,7 +24,8 @@ export class ApartmentDetailComponent implements OnInit {
       console.log(this.id);
       this.requestService.getOneApartment(this.id).subscribe({
         next: (data) => {
-          this.apartment = data
+          this.apartment = data;
+          this.sliderImages = data.images.slice(0,4);
           
         },
         error: (err) => {

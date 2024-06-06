@@ -12,8 +12,12 @@ export class ApartmentsApiService {
     public http: HttpClient
   ) {}
 
-  getAll(): Observable<IApartment[]> {
-    return this.http.get<IApartment[]>("assets/data/favoriteApartments.json");
+  getAll(topRated: boolean = false): Observable<IApartment[]> {
+    if(topRated){
+      return this.http.get<IApartment[]>("assets/data/favoriteApartments.json");
+    }
+
+    return this.http.get<IApartment[]>("assets/data/apartments.json");
   }
 
   getOne(id: number): Observable<IApartmentDetail>{

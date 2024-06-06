@@ -3489,7 +3489,7 @@ label {
   font-weight: 700;
   border: 1px solid var(--bs-border-color);
   box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.07);
-  /* background-image: url(../imgs/template/icons/star.svg); */
+  background-image: url('./assets/imgs/template/icons/star-yellow.svg');
   background-repeat: no-repeat;
   background-position: left 12px center;
 }
@@ -3577,13 +3577,9 @@ label {
 
 .card-journey-small .card-info .card-program .card-duration-tour {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   margin-bottom: 35px;
-}
-
-.card-journey-small .card-info .card-program .icon-duration {
-  padding: 0px 20px 0px 22px;
-  /* background: url(../imgs/template/icons/duration.svg) no-repeat left center; */
 }
 
 
@@ -17160,3 +17156,11 @@ body {
 
 
 /* MAJNE SACI */
+
+/* .card-button {
+  margin-right: 30px;
+}
+
+.card-button .btn .btn-gray {
+  padding: 10px 40px !important;
+} */

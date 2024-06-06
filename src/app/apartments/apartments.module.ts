@@ -3,21 +3,24 @@ import { CommonModule } from '@angular/common';
 
 import { ApartmentsRoutingModule } from './apartments-routing.module';
 import { ApartmentsDashboardComponent } from './components/apartments-dashboard/apartments-dashboard.component';
-import { ApartmentDetailComponent } from './components/apartment-detail/apartment-detail.component';
-import { ApartmentDetailReviewsComponent } from './components/apartment-detail-reviews/apartment-detail-reviews.component';
-import { NgImageSliderModule } from 'ng-image-slider';
+import { ApartmentDetailComponent } from './apartment-detail/components/apartment-view/apartment-detail.component';
+import { ApartmentDetailReviewsComponent } from './apartment-detail/components/apartment-reviews/apartment-detail-reviews.component';
+import { ApartmentDetailFormComponent } from './apartment-detail/components/apartment-form/apartment-detail-form.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
     ApartmentsDashboardComponent,
     ApartmentDetailComponent,
-    ApartmentDetailReviewsComponent
+    ApartmentDetailReviewsComponent,
+    ApartmentDetailFormComponent
   ],
   imports: [
     CommonModule,
     ApartmentsRoutingModule,
-    NgImageSliderModule
+    SharedModule
+    
   ]
 })
 export class ApartmentsModule { }

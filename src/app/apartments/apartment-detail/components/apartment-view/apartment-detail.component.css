@@ -4,3 +4,7 @@
   grid-template-rows: 1fr;
   gap: 0px 15px;
 }
+
+.backBtn {
+  position: absolute;
+}

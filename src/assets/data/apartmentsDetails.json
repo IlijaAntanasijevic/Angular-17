@@ -9,6 +9,7 @@
     "maxGuest": 6,
     "city": "Amsterdam",
     "location": "Location 123 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner.png" },
       { "path": "assets/imgs/page/property/banner2.png" },
@@ -19,7 +20,8 @@
       "firstName": "John",
       "lastName": "Doe",
       "phone": "+125454214",
-      "avatar": "assets/imgs/default.jpg"
+      "avatar": "assets/imgs/defaul,t.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -41,17 +43,19 @@
     "maxGuest": 4,
     "city": "Berlin",
     "location": "Location 456 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
-      { "path": "assets/imgs/page/property/banner4.png" },
-      { "path": "assets/imgs/page/property/banner5.png" },
-      { "path": "assets/imgs/page/property/banner6.png" }
+      { "path": "assets/imgs/page/property/banner3.png" },
+      { "path": "assets/imgs/page/property/banner3.png" },
+      { "path": "assets/imgs/page/property/banner3.png" }
     ],
     "user": {
       "id": 6,
       "firstName": "Jane",
       "lastName": "Smith",
       "phone": "+125454215",
-      "avatar": "assets/imgs/default2.jpg"
+      "avatar": "assets/imgs/default2.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -73,6 +77,7 @@
     "maxGuest": 5,
     "city": "Paris",
     "location": "Location 789 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner7.png" },
       { "path": "assets/imgs/page/property/banner8.png" },
@@ -87,7 +92,8 @@
       "firstName": "Alice",
       "lastName": "Brown",
       "phone": "+125454216",
-      "avatar": "assets/imgs/default3.jpg"
+      "avatar": "assets/imgs/default3.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -109,6 +115,7 @@
     "maxGuest": 3,
     "city": "Rome",
     "location": "Location 101 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner10.png" },
       { "path": "assets/imgs/page/property/banner11.png" },
@@ -119,7 +126,8 @@
       "firstName": "Michael",
       "lastName": "Johnson",
       "phone": "+125454217",
-      "avatar": "assets/imgs/default4.jpg"
+      "avatar": "assets/imgs/default4.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -141,6 +149,7 @@
     "maxGuest": 2,
     "city": "London",
     "location": "Location 102 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner13.png" },
       { "path": "assets/imgs/page/property/banner14.png" },
@@ -151,7 +160,8 @@
       "firstName": "Laura",
       "lastName": "Martinez",
       "phone": "+125454218",
-      "avatar": "assets/imgs/default5.jpg"
+      "avatar": "assets/imgs/default5.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -173,6 +183,7 @@
     "maxGuest": 4,
     "city": "Madrid",
     "location": "Location 103 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner16.png" },
       { "path": "assets/imgs/page/property/banner17.png" },
@@ -183,7 +194,8 @@
       "firstName": "Steve",
       "lastName": "Harris",
       "phone": "+125454219",
-      "avatar": "assets/imgs/default6.jpg"
+      "avatar": "assets/imgs/default6.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -205,6 +217,7 @@
     "maxGuest": 5,
     "city": "Barcelona",
     "location": "Location 104 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner19.png" },
       { "path": "assets/imgs/page/property/banner20.png" },
@@ -215,7 +228,8 @@
       "firstName": "Nina",
       "lastName": "Hughes",
       "phone": "+125454220",
-      "avatar": "assets/imgs/default7.jpg"
+      "avatar": "assets/imgs/default7.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -237,6 +251,7 @@
     "maxGuest": 6,
     "city": "Lisbon",
     "location": "Location 105 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner22.png" },
       { "path": "assets/imgs/page/property/banner23.png" },
@@ -247,7 +262,8 @@
       "firstName": "Mark",
       "lastName": "Walker",
       "phone": "+125454221",
-      "avatar": "assets/imgs/default8.jpg"
+      "avatar": "assets/imgs/default8.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -269,6 +285,7 @@
     "maxGuest": 3,
     "city": "Prague",
     "location": "Location 106 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner25.png" },
       { "path": "assets/imgs/page/property/banner26.png" },
@@ -279,7 +296,8 @@
       "firstName": "Mia",
       "lastName": "Wright",
       "phone": "+125454222",
-      "avatar": "assets/imgs/default9.jpg"
+      "avatar": "assets/imgs/default9.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -301,6 +319,7 @@
     "maxGuest": 4,
     "city": "Vienna",
     "location": "Location 107 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner28.png" },
       { "path": "assets/imgs/page/property/banner29.png" },
@@ -311,7 +330,8 @@
       "firstName": "Olivia",
       "lastName": "Adams",
       "phone": "+125454223",
-      "avatar": "assets/imgs/default10.jpg"
+      "avatar": "assets/imgs/default10.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -333,6 +353,7 @@
     "maxGuest": 2,
     "city": "Budapest",
     "location": "Location 108 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner31.png" },
       { "path": "assets/imgs/page/property/banner32.png" },
@@ -343,7 +364,8 @@
       "firstName": "Lucas",
       "lastName": "Baker",
       "phone": "+125454224",
-      "avatar": "assets/imgs/default11.jpg"
+      "avatar": "assets/imgs/default11.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -365,6 +387,7 @@
     "maxGuest": 3,
     "city": "Stockholm",
     "location": "Location 109 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner34.png" },
       { "path": "assets/imgs/page/property/banner35.png" },
@@ -375,7 +398,8 @@
       "firstName": "Sophia",
       "lastName": "Miller",
       "phone": "+125454225",
-      "avatar": "assets/imgs/default12.jpg"
+      "avatar": "assets/imgs/default12.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -397,6 +421,7 @@
     "maxGuest": 5,
     "city": "Copenhagen",
     "location": "Location 110 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner37.png" },
       { "path": "assets/imgs/page/property/banner38.png" },
@@ -407,7 +432,8 @@
       "firstName": "Daniel",
       "lastName": "Hernandez",
       "phone": "+125454226",
-      "avatar": "assets/imgs/default13.jpg"
+      "avatar": "assets/imgs/default13.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -429,6 +455,7 @@
     "maxGuest": 6,
     "city": "Oslo",
     "location": "Location 111 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner40.png" },
       { "path": "assets/imgs/page/property/banner41.png" },
@@ -439,7 +466,8 @@
       "firstName": "William",
       "lastName": "Perez",
       "phone": "+125454227",
-      "avatar": "assets/imgs/default14.jpg"
+      "avatar": "assets/imgs/default14.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -461,6 +489,7 @@
     "maxGuest": 4,
     "city": "Helsinki",
     "location": "Location 112 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner43.png" },
       { "path": "assets/imgs/page/property/banner44.png" },
@@ -471,7 +500,8 @@
       "firstName": "Joseph",
       "lastName": "Gonzalez",
       "phone": "+125454228",
-      "avatar": "assets/imgs/default15.jpg"
+      "avatar": "assets/imgs/default15.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -493,6 +523,7 @@
     "maxGuest": 5,
     "city": "Warsaw",
     "location": "Location 113 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner46.png" },
       { "path": "assets/imgs/page/property/banner47.png" },
@@ -503,7 +534,8 @@
       "firstName": "Charlotte",
       "lastName": "Moore",
       "phone": "+125454229",
-      "avatar": "assets/imgs/default16.jpg"
+      "avatar": "assets/imgs/default16.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -525,6 +557,7 @@
     "maxGuest": 3,
     "city": "Dublin",
     "location": "Location 114 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner49.png" },
       { "path": "assets/imgs/page/property/banner50.png" },
@@ -535,7 +568,8 @@
       "firstName": "Amelia",
       "lastName": "Young",
       "phone": "+125454230",
-      "avatar": "assets/imgs/default17.jpg"
+      "avatar": "assets/imgs/default17.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -557,6 +591,7 @@
     "maxGuest": 4,
     "city": "Vienna",
     "location": "Location 115 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner52.png" },
       { "path": "assets/imgs/page/property/banner53.png" },
@@ -567,7 +602,8 @@
       "firstName": "Elijah",
       "lastName": "Mitchell",
       "phone": "+125454231",
-      "avatar": "assets/imgs/default18.jpg"
+      "avatar": "assets/imgs/default18.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -589,6 +625,7 @@
     "maxGuest": 6,
     "city": "Athens",
     "location": "Location 116 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner55.png" },
       { "path": "assets/imgs/page/property/banner56.png" },
@@ -599,7 +636,8 @@
       "firstName": "Grace",
       "lastName": "Carter",
       "phone": "+125454232",
-      "avatar": "assets/imgs/default19.jpg"
+      "avatar": "assets/imgs/default19.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {
@@ -621,6 +659,7 @@
     "maxGuest": 2,
     "city": "Zurich",
     "location": "Location 117 Random",
+    "description" : "Elevate your Las Vegas experience to new heights with a journey aboard The High Roller at The LINQ. As the tallest observation wheel in the world, standing at an impressive 550 feet tall, The High Roller offers a bird's-eye perspective of the iconic Las Vegas Strip and its surrounding desert landscape. From the moment you step into one of the spacious cabins, you'll be transported on a mesmerizing adventure, where every turn offers a new and breathtaking vista of the vibrant city below. Whether you're a first-time visitor or a seasoned Las Vegas aficionado, The High Roller promises an unparalleled experience that will leave you in awe. With its climate-controlled cabins and immersive audio commentary, this attraction provides a unique opportunity to see Las Vegas from a whole new perspective, while learning about its rich history and famous landmarks along the way.",
     "images": [
       { "path": "assets/imgs/page/property/banner58.png" },
       { "path": "assets/imgs/page/property/banner59.png" },
@@ -631,7 +670,8 @@
       "firstName": "Jackson",
       "lastName": "Scott",
       "phone": "+125454233",
-      "avatar": "assets/imgs/default20.jpg"
+      "avatar": "assets/imgs/default20.jpg",
+      "email": "test@gmail.com"
     },
     "reviews": [
       {

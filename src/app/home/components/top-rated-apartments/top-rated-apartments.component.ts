@@ -16,7 +16,7 @@ export class TopRatedApartments implements OnInit {
   data: IApartment[] = [];
    
   ngOnInit(): void {
-    this.requestService.getAll().subscribe({
+    this.requestService.getTopRated().subscribe({
       next: (data) => {
         this.data = data;
         // console.log(data);

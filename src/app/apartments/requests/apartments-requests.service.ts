@@ -12,6 +12,10 @@ export class ApartmentsRequestsService {
   ) { }
 
 
+  getTopRated(): Observable<IApartment[]>{
+    return this.apiService.getAll(true);
+  }
+
   getAll(): Observable<IApartment[]>{
     return this.apiService.getAll();
   }
