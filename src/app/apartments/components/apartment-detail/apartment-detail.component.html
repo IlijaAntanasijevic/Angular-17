@@ -2,7 +2,7 @@
   <section class="box-section box-breadcrumb background-body">
     <div class="container">
       <ul class="breadcrumbs">
-        <li> <a routerLink="">Home</a><span class="arrow-right">
+        <li> <a routerLink="/home">Home</a><span class="arrow-right">
             <svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 11L6 6L1 1" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               </path>
@@ -12,7 +12,7 @@
               <path d="M1 11L6 6L1 1" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               </path>
             </svg></span></li>
-        <li> <span class="text-breadcrumb">APARTMENT NAME</span></li>
+        <li> <span class="text-breadcrumb">{{apartment.name}}</span></li>
       </ul>
     </div>
   </section>
@@ -21,7 +21,7 @@
       <div class="block-banner-property-detail container-banner-activities">
         <div class="row">
           <div class="col-xl-6 col-lg-6">
-            <div class="banner-property-detail-1"> <img src="assets/imgs/page/property/banner2.png" alt="Travile">
+            <div class="banner-property-detail-1"> <img src="{{apartment.mainImage}}" alt="{{apartment.name}}">
               <div class="box-button-abs"> <a class="btn btn-brand-secondary" href="#">
                   <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -40,14 +40,19 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="banner-property-detail-2"> <img src="assets/imgs/page/property/banner3.png" alt="Travile"></div>
-            <div class="banner-property-detail-3"> <img src="assets/imgs/page/property/banner4.png" alt="Travile"></div>
+          <div class="col-sm-6 images-grid">
+            <!-- <div class="banner-property-detail-2">
+              <ng-image-slider [images]="apartment.images" [autoSlide]="1" [slideImage]="2">
+              </ng-image-slider>
+            </div> -->
+
+            @for(image of apartment.images; track image){
+            <div class="banner-property-detail-2">
+              <img src="assets/imgs/page/property/banner3.png" alt="Travile">
+            </div>
+            }
           </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="banner-property-detail-4"> <img src="assets/imgs/page/property/banner5.png" alt="Travile"></div>
-            <div class="banner-property-detail-5"> <img src="assets/imgs/page/property/banner6.png" alt="Travile"></div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -94,7 +99,7 @@
                     reviews)</span></span></div>
             </div>
             <div class="tour-title-main">
-              <h4 class="neutral-1000">Tuscany | Farmhouse with pool and restaurant</h4>
+              <h4 class="neutral-1000">{{apartment.name}}</h4>
             </div>
             <div class="tour-metas">
               <div class="tour-meta-left">
@@ -108,6 +113,7 @@
               </div>
 
             </div>
+
           </div>
           <div class="box-collapse-expand">
             <div class="group-collapse-expand">
@@ -176,6 +182,8 @@
               </div>
             </div>
           </div>
+          <!-- RATE -->
+          <app-apartment-detail-reviews></app-apartment-detail-reviews>
         </div>
         <div class="col-lg-4">
           <div class="booking-form">
@@ -325,7 +333,11 @@
           </div>
 
         </div>
+
       </div>
     </div>
+
   </section>
+
+
 </main>

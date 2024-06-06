@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IApartment } from '../../interfaces/i-apartments';
-import { ApartmentsRequestsService } from '../../requests/apartments-requests.service';
+import { IApartment } from '../../../apartments/interfaces/i-apartments';
+import { ApartmentsRequestsService } from '../../../apartments/requests/apartments-requests.service';
 
 @Component({
   selector: 'app-top-rated-apartments',

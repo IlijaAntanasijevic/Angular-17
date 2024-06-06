@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout/components/layout/layout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ApartmentDetailComponent } from './apartments/apartment-detail/apartment-detail.component';
 
 const routes: Routes = [
   {
@@ -36,6 +35,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  // imports: [RouterModule.forRoot(routes, {
+  //   scrollPositionRestoration: 'top'
+  // })],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })

@@ -10,3 +10,9 @@ export interface IApartment extends IBaseName {
   city: string
 } 
 
+export interface IApartmentDetail extends IApartment {
+  location: string
+  images: string[]
+  user: object
+  reviews: object[]
+}
