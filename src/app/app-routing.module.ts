@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout/components/layout/layout.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ApartmentDetailComponent } from './apartments/apartment-detail/apartment-detail.component';
 
 const routes: Routes = [
   {
@@ -17,14 +19,18 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
       },
       {
-        path: "user",
-        loadChildren: () => import('./user/user.module').then(m => m.UserModule)
-      },
-      {
         path: "apartments",
         loadChildren: () => import('./apartments/apartments.module').then(m => m.ApartmentsModule)
+      },
+      {
+        path: "**",
+        component: NotFoundComponent
       }
-    ] 
+    ]
+  },
+  {
+    path: "**",
+    component: NotFoundComponent
   }
 
 ];
