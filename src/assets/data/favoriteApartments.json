@@ -2,55 +2,65 @@
   {
     "id": 1,
     "name": "Test 1",
-    "imagePath": "assets/imgs/page/homepage1/journey3.png",
+    "mainImage": "assets/imgs/page/homepage1/journey3.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
-    "maxGuest": 6 
+    "maxGuest": 6 ,
+    "city": "Amsterdam"
+
   },
   {
     "id": 2,
     "name": "Test 2",
-    "imagePath": "assets/imgs/page/homepage1/journey2.png",
+    "mainImage": "assets/imgs/page/homepage1/journey2.png",
     "price": 58.25,
     "totalReviews": 670,
     "rate": 4.95,
-    "maxGuest": 4 
+    "maxGuest": 4,
+    "city": "Amsterdam"
   },
   {
     "id": 3,
     "name": "Test 3",
-    "imagePath": "assets/imgs/page/homepage1/journey4.png",
+    "mainImage": "assets/imgs/page/homepage1/journey4.png",
     "price": 92.25,
     "totalReviews": 350,
     "rate": 4.45,
-    "maxGuest": 5 
+    "maxGuest": 5,
+    "city": "Amsterdam"
+
   },
   {
     "id": 4,
     "name": "Test 4",
-    "imagePath": "assets/imgs/page/homepage1/journey2.png",
+    "mainImage": "assets/imgs/page/homepage1/journey2.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
-    "maxGuest": 6 
+    "maxGuest": 6,
+    "city": "Budva"
   },
   {
     "id": 5,
     "name": "Test 5",
-    "imagePath": "assets/imgs/page/homepage1/journey3.png",
+    "mainImage": "assets/imgs/page/homepage1/journey3.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
-    "maxGuest": 6 
+    "maxGuest": 6,
+    "city": "Amsterdam"
+     
   },
   {
     "id": 6,
     "name": "Test 6",
-    "imagePath": "assets/imgs/page/homepage1/journey4.png",
+    "mainImage": "assets/imgs/page/homepage1/journey4.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
-    "maxGuest": 6 
+    "maxGuest": 6 ,
+    "city": "Amsterdam"
+
   }
 ]

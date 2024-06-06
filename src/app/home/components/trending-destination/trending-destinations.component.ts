@@ -13,7 +13,7 @@ export class TrendingDestinationsComponent implements OnInit {
   ){}
 
   data: IDestination[] = [];
-  public top1Destination: IDestination;
+  public top1Destination: IDestination | undefined;
    
   ngOnInit(): void {
     this.requestService.getAllDestinations().subscribe({

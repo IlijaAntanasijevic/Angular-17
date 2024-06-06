@@ -15,4 +15,6 @@ export class ApartmentsApiService {
   getAll(): Observable<IApartment[]> {
     return this.http.get<IApartment[]>("assets/data/favoriteApartments.json");
   }
+
+
 }

@@ -19,7 +19,7 @@ export class TopRatedApartments implements OnInit {
     this.requestService.getAll().subscribe({
       next: (data) => {
         this.data = data;
-        console.log(data);
+        // console.log(data);
       },
       error: (error) => {
         console.log(error);
