@@ -13755,7 +13755,7 @@ a.link-black:hover svg {
   border: 1px solid var(--bs-border-color);
   border-radius: 33px;
   padding: 6px 16px 6px 30px;
-  /* background-image: url(../imgs/template/icons/star.svg); */
+  background-image: url('./assets/imgs/template/icons/star-yellow.svg');
   background-repeat: no-repeat;
   background-position: left 12px center;
   box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.07);

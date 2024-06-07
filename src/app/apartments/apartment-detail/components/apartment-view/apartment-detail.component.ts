@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { ApartmentsRequestsService } from '../../../requests/apartments-requests.service';
 import { IApartmentDetail } from '../../../interfaces/i-apartments';
+import { MatDialog } from '@angular/material/dialog';
+import { ApartmentDetailFormComponent } from '../apartment-form/apartment-detail-form.component';
 
 @Component({
   selector: 'app-apartment-detail',
@@ -16,7 +18,8 @@ export class ApartmentDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private requestService: ApartmentsRequestsService
+    private requestService: ApartmentsRequestsService,
+    private dialog: MatDialog
   ){}
   
 
@@ -51,6 +54,24 @@ export class ApartmentDetailComponent implements OnInit {
         behavior: 'instant',
       })
   });
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(ApartmentDetailFormComponent, {
+      data: {
+        pricePerNight: this.apartment.price,
+        totalPrice: 500,
+        checkIn: "2024-01-01",
+        checkOut: "2024-01-10"
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if(result){
+        this.router.navigate(['/apartments']);
+      }
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }

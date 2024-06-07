@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IApartment } from '../../interfaces/i-apartments';
 import { ApartmentsRequestsService } from '../../requests/apartments-requests.service';
-import { MatTableDataSource } from '@angular/material/table';
 
-//TODO List apartments 
 @Component({
   selector: 'app-apartments-dashboard',
   templateUrl: './apartments-dashboard.component.html',
