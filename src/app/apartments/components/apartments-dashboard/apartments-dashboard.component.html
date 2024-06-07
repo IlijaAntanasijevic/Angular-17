@@ -47,9 +47,7 @@
           </div>
           <div class="box-grid-tours list-tours wow fadeIn">
             <div class="row">
-
-
-              @for(apartment of apartments; track apartment){
+              @for(apartment of displayedApartments; track apartment){
               <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="card-journey-small background-card">
                   <div class="card-image">
@@ -98,26 +96,7 @@
 
             </div>
           </div>
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">
-                    <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.00016 1.33325L1.3335 5.99992M1.3335 5.99992L6.00016 10.6666M1.3335 5.99992H10.6668"
-                        stroke="" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span></a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link active" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">...</a></li>
-              <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">
-                    <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.99967 10.6666L10.6663 5.99992L5.99968 1.33325M10.6663 5.99992L1.33301 5.99992"
-                        stroke="" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span></a></li>
-            </ul>
-          </nav>
+          <app-paginator [apartments]="apartments" (pageChange)="onPageChange($event)"></app-paginator>
         </div>
         <!-- FILTER OPTIONS -->
         <!-- <div class="content-left order-lg-first">

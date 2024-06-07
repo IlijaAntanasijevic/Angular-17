@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { ApartmentsRequestsService } from '../../../requests/apartments-requests.service';
 import { IApartmentDetail } from '../../../interfaces/i-apartments';
 
@@ -15,24 +15,42 @@ export class ApartmentDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private requestService: ApartmentsRequestsService
   ){}
   
 
   ngOnInit(): void {
-      this.id = Number(this.route.snapshot.paramMap.get('id'));
-      console.log(this.id);
-      this.requestService.getOneApartment(this.id).subscribe({
-        next: (data) => {
-          this.apartment = data;
-          this.sliderImages = data.images.slice(0,4);
-          
-        },
-        error: (err) => {
-          console.log(err);
-          
-        }
+    this.fetchData();
+    this.scrollToTop();
+  }
+
+  fetchData(): void {
+    this.id = Number(this.route.snapshot.paramMap.get('id'));
+    this.requestService.getOneApartment(this.id).subscribe({
+      next: (data) => {
+        this.apartment = data;
+        this.sliderImages = data.images.slice(0,4);
+        
+      },
+      error: (err) => {
+        console.log(err);
+        
+      }
+    })
+  }
+
+  scrollToTop(): void {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'instant',
       })
+  });
   }
 
 }

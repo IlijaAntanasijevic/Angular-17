@@ -8,6 +8,7 @@ import { ApartmentDetailReviewsComponent } from './apartment-detail/components/a
 import { ApartmentDetailFormComponent } from './apartment-detail/components/apartment-form/apartment-detail-form.component';
 import { SharedModule } from '../shared/shared.module';
 import { FullNamePipe } from "../../pipes/full-name.pipe";
+import { PaginatorComponent } from './components/paginator/paginator.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FullNamePipe } from "../../pipes/full-name.pipe";
         ApartmentsDashboardComponent,
         ApartmentDetailComponent,
         ApartmentDetailReviewsComponent,
-        ApartmentDetailFormComponent
+        ApartmentDetailFormComponent,
+        PaginatorComponent
     ],
     imports: [
         CommonModule,
