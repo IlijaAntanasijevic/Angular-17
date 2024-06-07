@@ -9,66 +9,28 @@
   <div class="collapse show" id="collapseReviews">
     <div class="card card-body">
       <div class="list-reviews">
+        @for(review of reviews; track review){
         <div class="item-review">
           <div class="head-review">
-            <div class="author-review"> <img src="assets/imgs/page/tour-detail/avatar.png" alt="Travila">
+            <div class="author-review">
+              <img src="{{review.avatar}}" alt="Travila">
               <div class="author-info">
-                <p class="text-lg-bold">Sarah Johnson</p>
-                <p class="text-sm-medium neutral-500">December 4, 2024 at 3:12 pm</p>
+                <p class="text-lg-bold">{{review | fullName}}</p>
+                <p class="text-sm-medium neutral-500">{{ review.date}}</p>
               </div>
             </div>
-            <div class="rate-review"> <img src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"></div>
-          </div>
-          <div class="content-review">
-            <p class="text-sm-medium neutral-800">The views from The High Roller were absolutely stunning!
-              It's a fantastic way to see the Strip and the surrounding area. The cabins are spacious and
-              comfortable, and the audio commentary adds an extra layer of enjoyment. Highly recommend!</p>
-          </div>
-        </div>
-        <div class="item-review">
-          <div class="head-review">
-            <div class="author-review"> <img src="assets/imgs/page/tour-detail/avatar.png" alt="Travila">
-              <div class="author-info">
-                <p class="text-lg-bold">Sarah Johnson</p>
-                <p class="text-sm-medium neutral-500">December 4, 2024 at 3:12 pm</p>
-              </div>
+            <div class="rate-review">
+              @for(number of getRange(review.review); track number){
+              <img src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila">
+              }
             </div>
-            <div class="rate-review"> <img src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"></div>
           </div>
           <div class="content-review">
-            <p class="text-sm-medium neutral-800">The views from The High Roller were absolutely stunning!
-              It's a fantastic way to see the Strip and the surrounding area. The cabins are spacious and
-              comfortable, and the audio commentary adds an extra layer of enjoyment. Highly recommend!</p>
+            <p class="text-sm-medium neutral-800">{{review.comment}}</p>
           </div>
         </div>
-        <div class="item-review">
-          <div class="head-review">
-            <div class="author-review"> <img src="assets/imgs/page/tour-detail/avatar.png" alt="Travila">
-              <div class="author-info">
-                <p class="text-lg-bold">Sarah Johnson</p>
-                <p class="text-sm-medium neutral-500">December 4, 2024 at 3:12 pm</p>
-              </div>
-            </div>
-            <div class="rate-review"> <img src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"><img
-                src="assets/imgs/page/tour-detail/star-big.svg" alt="Travila"></div>
-          </div>
-          <div class="content-review">
-            <p class="text-sm-medium neutral-800">The views from The High Roller were absolutely stunning!
-              It's a fantastic way to see the Strip and the surrounding area. The cabins are spacious and
-              comfortable, and the audio commentary adds an extra layer of enjoyment. Highly recommend!</p>
-          </div>
-        </div>
+        }
+
       </div>
     </div>
   </div>

@@ -25,9 +25,18 @@
     },
     "reviews": [
       {
-        "firstName": "Sarah",
+        "firstName": "Sarah 1",
         "lastName": "Johson",
         "date": "25-01-2024",
+        "avatar": "assets/imgs/default.jpg",
+        "review": 2,
+        "comment": "The views from The High Roller were absolutely stunning! It's a fantastic way to see the Strip and the surrounding area. The cabins are spacious and comfortable, and the audio commentary adds an extra layer of enjoyment. Highly recommend!"
+      },
+        {
+        "firstName": "Sarah 2",
+        "lastName": "Johson",
+        "date": "25-01-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4,
         "comment": "The views from The High Roller were absolutely stunning! It's a fantastic way to see the Strip and the surrounding area. The cabins are spacious and comfortable, and the audio commentary adds an extra layer of enjoyment. Highly recommend!"
       }
@@ -62,6 +71,7 @@
         "firstName": "Tom",
         "lastName": "Johnson",
         "date": "26-01-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 5,
         "comment": "An amazing place to stay, the views were breathtaking and the service was top-notch!"
       }
@@ -100,6 +110,7 @@
         "firstName": "Emily",
         "lastName": "Davis",
         "date": "27-01-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.8,
         "comment": "Loved the ambiance and the view from the balcony. Will definitely come back!"
       }
@@ -134,6 +145,7 @@
         "firstName": "Chris",
         "lastName": "Lee",
         "date": "28-01-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.9,
         "comment": "A fantastic experience with wonderful amenities. The staff was incredibly helpful!"
       }
@@ -168,6 +180,7 @@
         "firstName": "David",
         "lastName": "Taylor",
         "date": "29-01-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.7,
         "comment": "The location was perfect for exploring the city. Clean and comfortable!"
       }
@@ -202,6 +215,7 @@
         "firstName": "Olivia",
         "lastName": "Garcia",
         "date": "30-01-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.5,
         "comment": "The apartment was well-furnished and in a great location. Highly recommend!"
       }
@@ -236,6 +250,7 @@
         "firstName": "Sophia",
         "lastName": "Lopez",
         "date": "31-01-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.3,
         "comment": "Beautiful apartment with an amazing view. The staff was friendly and helpful."
       }
@@ -270,6 +285,7 @@
         "firstName": "Emma",
         "lastName": "Jones",
         "date": "01-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.1,
         "comment": "Great place to stay, close to the main attractions. Very clean and cozy."
       }
@@ -304,6 +320,7 @@
         "firstName": "Liam",
         "lastName": "Hall",
         "date": "02-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.2,
         "comment": "The apartment was fantastic, exactly as described. The location was perfect."
       }
@@ -338,6 +355,7 @@
         "firstName": "Noah",
         "lastName": "Scott",
         "date": "03-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.4,
         "comment": "A wonderful stay with beautiful surroundings. The apartment was clean and well-maintained."
       }
@@ -372,6 +390,7 @@
         "firstName": "James",
         "lastName": "White",
         "date": "04-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.3,
         "comment": "Great experience, the apartment was just as shown in the pictures. Would stay again!"
       }
@@ -406,6 +425,7 @@
         "firstName": "Ella",
         "lastName": "Martinez",
         "date": "05-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.1,
         "comment": "A very pleasant stay, the apartment was cozy and in a good location."
       }
@@ -440,6 +460,7 @@
         "firstName": "Isabella",
         "lastName": "Robinson",
         "date": "06-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.6,
         "comment": "Wonderful place, very modern and clean. The location was perfect for exploring the city."
       }
@@ -474,6 +495,7 @@
         "firstName": "Alexander",
         "lastName": "Clark",
         "date": "07-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.7,
         "comment": "Great apartment, very spacious and well located. Had a fantastic stay!"
       }
@@ -508,6 +530,7 @@
         "firstName": "Matthew",
         "lastName": "Lewis",
         "date": "08-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.5,
         "comment": "Loved the apartment, it was very clean and had all the amenities we needed. Great location too!"
       }
@@ -542,6 +565,7 @@
         "firstName": "Aiden",
         "lastName": "Harris",
         "date": "09-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.2,
         "comment": "A great stay, very comfortable and well-equipped. Would definitely recommend."
       }
@@ -576,6 +600,7 @@
         "firstName": "Abigail",
         "lastName": "King",
         "date": "10-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.5,
         "comment": "The apartment was clean and cozy, in a great location. Perfect for our stay!"
       }
@@ -610,6 +635,7 @@
         "firstName": "Henry",
         "lastName": "Rodriguez",
         "date": "11-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.0,
         "comment": "We had a fantastic stay. The apartment was in a great location and very comfortable."
       }
@@ -644,6 +670,7 @@
         "firstName": "Hannah",
         "lastName": "Lopez",
         "date": "12-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.8,
         "comment": "Beautiful apartment with a fantastic view. The staff was very helpful and friendly."
       }
@@ -678,6 +705,7 @@
         "firstName": "Madison",
         "lastName": "Martinez",
         "date": "13-02-2024",
+        "avatar": "assets/imgs/default.jpg",
         "review": 4.3,
         "comment": "The apartment was perfect for our needs. Clean, cozy, and in a great location."
       }

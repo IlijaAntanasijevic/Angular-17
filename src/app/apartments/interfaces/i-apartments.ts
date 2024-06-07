@@ -1,4 +1,5 @@
 import { IBaseName, IUser } from "../../interfaces/i-base"
+import { IReview } from "./i-reviews"
 
 
 export interface IApartment extends IBaseName {
@@ -12,8 +13,8 @@ export interface IApartment extends IBaseName {
 
 export interface IApartmentDetail extends IApartment {
   location: string
-  images: object[]
+  images: string[]
   user: IUser
-  reviews: object[]
+  reviews: IReview[]
   description: string
 }

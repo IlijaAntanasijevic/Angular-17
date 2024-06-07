@@ -12,13 +12,13 @@ export class ApartmentDetailComponent implements OnInit {
   id: number;
   apartment: IApartmentDetail;
   sliderImages: any;
+
   constructor(
     private route: ActivatedRoute,
     private requestService: ApartmentsRequestsService
   ){}
   
 
-  
   ngOnInit(): void {
       this.id = Number(this.route.snapshot.paramMap.get('id'));
       console.log(this.id);
@@ -33,8 +33,6 @@ export class ApartmentDetailComponent implements OnInit {
           
         }
       })
-     
-      
   }
 
 }

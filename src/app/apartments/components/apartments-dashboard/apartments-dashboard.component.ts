@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { IApartment } from '../../interfaces/i-apartments';
 import { ApartmentsRequestsService } from '../../requests/apartments-requests.service';
 
+//TODO Pagination 
+//TODO List apartments 
 @Component({
   selector: 'app-apartments-dashboard',
   templateUrl: './apartments-dashboard.component.html',

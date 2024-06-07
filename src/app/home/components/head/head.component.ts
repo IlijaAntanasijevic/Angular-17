@@ -5,10 +5,7 @@ import { map, Observable, startWith } from 'rxjs';
 import { ILocation } from '../../interfaces/i-location';
 import { LocationsRequestsService } from '../../requests/locations-requests.service';
 
-
-interface Food {
-  value: number;
-}
+//TODO Search Apartmnets
 
 @Component({
   selector: 'app-head',

@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { IDestination } from '../../interfaces/i-destination';
 import { LocationsRequestsService } from '../../requests/locations-requests.service';
 
+
+//TODO Search By trending destination
+/* TODO Errors
+  - Console error 
+*/
 @Component({
   selector: 'app-trending-destinations',
   templateUrl: './trending-destinations.component.html',
@@ -11,7 +16,6 @@ export class TrendingDestinationsComponent implements OnInit {
   constructor(
     public requestService: LocationsRequestsService
   ){}
-
   data: IDestination[] = [];
   public top1Destination: IDestination | undefined;
    
