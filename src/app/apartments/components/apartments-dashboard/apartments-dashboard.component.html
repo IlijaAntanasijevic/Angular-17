@@ -3,9 +3,7 @@
     <div class="container">
       <div class="box-content-main">
         <div class="content-right">
-          <div class="box-view-type" [class.isNotSearched]="!search">
-            <span class="text-sm-bold neutral-500 number-found">{{apartments.length}} apartments found</span>
-          </div>
+
           @if(notApartmentsFound){
           <div class="text-center">
             <h1 class="neutral-1000"> <span>We </span>Can’t Find <span>any apartment</span></h1>
@@ -23,10 +21,13 @@
           @else if(search){
           <div class="box-filters mb-25 pb-5 border-bottom border-1">
             <div class="row align-items-center">
-              <div class="col-xl-10 col-md-8 mb-12 text-lg-start text-center">
+              <div class="box-view-type">
+                <span class="text-sm-bold neutral-500 number-found">{{apartments.length}} apartments found</span>
+              </div>
+              <div class="col-xl-10 col-md-8 mb-12 text-lg-start text-center mb-2">
 
-                <mat-chip-set aria-label="Fish selection">
-                  <mat-chip>{{search.checkIn | date: 'd-MMM-yyyy'}} - {{search.checkOut | date:'d-MMM-yyyy'}}</mat-chip>
+                <mat-chip-set>
+                  <mat-chip>{{search.checkIn | date: 'd/MMM/yyyy'}} - {{search.checkOut | date:'d/MMM/yyyy'}}</mat-chip>
                   <mat-chip>{{search.location}}</mat-chip>
                   <mat-chip> Guests: <span>{{search.guests}}</span></mat-chip>
                 </mat-chip-set>
