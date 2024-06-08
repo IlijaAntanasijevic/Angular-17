@@ -18,12 +18,11 @@ export class ApartmentsDashboardComponent implements OnInit {
 
   apartments: IApartment[];
   displayedApartments: IApartment[];
-  search: ISearch
+  search: ISearch;
   notApartmentsFound: boolean = false;
 
   ngOnInit(): void {
     this.getQueryData();
-
   }
 
   fetchData(search: ISearch = null): void {
@@ -49,6 +48,8 @@ export class ApartmentsDashboardComponent implements OnInit {
           guests: params['guests']
         };
         this.fetchData(this.search);
+        //this.search.checkIn = this.formatDate(new Date(this.search.checkIn)); 
+        
       }
       else {
         this.fetchData();
@@ -63,5 +64,9 @@ export class ApartmentsDashboardComponent implements OnInit {
       top: 0,
       left: 0
     })
+  }
+
+  formatDate(date: Date) {
+    return date;
   }
 }
