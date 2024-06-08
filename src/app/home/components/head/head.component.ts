@@ -26,7 +26,7 @@ export class HeadComponent implements OnInit {
   searchObject: ISearch;
 
   totalNights: number | null = null;
-  minDate: Date = new Date();
+  minDate: Date = new Date(new Date().setDate(new Date().getDate() + 1));
 
   form = new FormGroup({
     start: new FormControl('', Validators.required),

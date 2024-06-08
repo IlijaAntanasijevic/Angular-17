@@ -27,7 +27,7 @@ export class ApartmentsDashboardComponent implements OnInit {
     this.getQueryData();
   }
 
-  fetchData(search: ISearch = null): void {
+  fetchData(search: ISearch = null): void {    
       this.requestService.getAll(search).subscribe({
         next: (data) => {
           this.notApartmentsFound = data.length === 0;
@@ -51,7 +51,7 @@ export class ApartmentsDashboardComponent implements OnInit {
         };
         this.searchService.setData(this.search);
         this.fetchData(this.search);
-        //this.search.checkIn = this.formatDate(new Date(this.search.checkIn)); 
+
         
       }
       else {

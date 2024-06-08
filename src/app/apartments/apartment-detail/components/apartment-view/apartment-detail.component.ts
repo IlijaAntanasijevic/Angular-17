@@ -23,16 +23,14 @@ export class ApartmentDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private requestService: ApartmentsRequestsService,
-    private dialog: MatDialog,
-    private searchService: SearchService
+    private dialog: MatDialog
   ){}
   
 
   ngOnInit(): void {
     this.fetchData();
     this.scrollToTop();
-    console.log(this.searchService.getData);
-    
+ 
   }
 
   fetchData(): void {
@@ -44,9 +42,7 @@ export class ApartmentDetailComponent implements OnInit {
         let divideFeatures = Math.ceil(data.features.length / 2);
         this.featuresFirstColum = data.features.slice(0, divideFeatures);
         this.featuresSecondColum = data.features.slice(divideFeatures);
-        
-        
-        
+       
       },
       error: (err) => {
         console.log(err);
@@ -68,22 +64,5 @@ export class ApartmentDetailComponent implements OnInit {
   });
   }
 
-  openDialog(): void {
-    const dialogRef = this.dialog.open(ApartmentDetailFormComponent, {
-      data: {
-        pricePerNight: this.apartment.price,
-        totalPrice: 500,
-        checkIn: "2024-01-01",
-        checkOut: "2024-01-10"
-      }
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      if(result){
-        this.router.navigate(['/apartments']);
-      }
-      console.log(`Dialog result: ${result}`);
-    });
-  }
 
 }

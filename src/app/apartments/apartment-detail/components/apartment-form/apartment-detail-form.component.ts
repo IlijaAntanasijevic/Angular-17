@@ -15,17 +15,13 @@ export class ApartmentDetailFormComponent implements OnInit {
 
   constructor(
     private dialogRef: MatDialogRef<ApartmentDetailFormComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: IBookingForm,
-    private searchService: SearchService
+    @Inject(MAT_DIALOG_DATA) public data: IBookingForm
 
   ){}
 
 
   ngOnInit(): void {
-   // throw new Error('Method not implemented.');
-    console.log(this.searchService.getData);
-    
-   //console.log(this.data);
+   console.log(this.data);
    
   }
 

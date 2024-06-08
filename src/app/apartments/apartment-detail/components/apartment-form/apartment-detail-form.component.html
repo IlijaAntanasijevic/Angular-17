@@ -52,8 +52,8 @@
           <p>Per night: <span class="bookingInfo"> {{data.pricePerNight}}$ </span> </p>
           <p>Total price: <span class="bookingInfo"> {{data.totalPrice}}$</span></p>
 
-          <p>Check in: <span class="bookingInfo"> {{data.checkIn}} </span></p>
-          <p>Check out: <span class="bookingInfo"> {{data.checkOut}} </span></p>
+          <p>Check in: <span class="bookingInfo"> {{data.checkIn | date: 'd-MMM-yyyy'}} </span></p>
+          <p>Check out: <span class="bookingInfo"> {{data.checkOut | date: 'd-MMM-yyyy'}} </span></p>
 
         </div>
 
