@@ -17,8 +17,8 @@
         <!-- Location  -->
         <div class="item-search">
           <label class="text-sm-bold neutral-500">Location</label>
-          <mat-form-field class="example-full-width">
-            <input type="text" matInput [formControl]="locationControl" [matAutocomplete]="auto">
+          <mat-form-field class="example-full-width" [formGroup]="form">
+            <input type="text" matInput formControlName="location" [matAutocomplete]="auto">
             <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
               @for (option of filteredOptions | async; track option) {
               <mat-option [value]="option">{{option.name}}</mat-option>
@@ -56,7 +56,7 @@
           </div>
         </div>
         <div class="item-search bd-none d-flex justify-content-end">
-          <button class="btn btn-black-lg" (click)="save()">
+          <button class="btn btn-black-lg" (click)="search()" [disabled]="form.invalid">
             <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M19 19L14.6569 14.6569M14.6569 14.6569C16.1046 13.2091 17 11.2091 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17C11.2091 17 13.2091 16.1046 14.6569 14.6569Z"

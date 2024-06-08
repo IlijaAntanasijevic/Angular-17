@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IApartment } from '../../interfaces/i-apartments';
 import { ApartmentsRequestsService } from '../../requests/apartments-requests.service';
+import { ActivatedRoute } from '@angular/router';
+import { ISearch } from '../../interfaces/i-search';
 
 @Component({
   selector: 'app-apartments-dashboard',
@@ -9,26 +11,49 @@ import { ApartmentsRequestsService } from '../../requests/apartments-requests.se
 })
 export class ApartmentsDashboardComponent implements OnInit {
 
-  constructor(private requestService: ApartmentsRequestsService) { }
+  constructor(
+    private requestService: ApartmentsRequestsService,
+    private route: ActivatedRoute
+  ) {}
 
   apartments: IApartment[];
-  totalApartments: number;
   displayedApartments: IApartment[];
+  search: ISearch
+  notApartmentsFound: boolean = false;
 
   ngOnInit(): void {
-    this.fetchData();
+    this.getQueryData();
+
   }
 
-  fetchData(): void {
-    this.requestService.getAll().subscribe({
-      next: (data) => {
-        this.apartments = data;
-        this.totalApartments = data.length;
-        this.displayedApartments = this.apartments.slice(0, 9); 
-      },
-      error: (err) => {
-        console.log(err);
+  fetchData(search: ISearch = null): void {
+      this.requestService.getAll(search).subscribe({
+        next: (data) => {
+          this.notApartmentsFound = data.length === 0;
+          this.apartments = data;
+          this.displayedApartments = this.apartments.slice(0, 9); 
+        },
+        error: (err) => {
+          console.log(err);
+        }
+      })
+  }
+
+  getQueryData() {
+    this.route.queryParams.subscribe(params => {
+      if(params['checkIn'] && params['checkOut'] && params['location'] && params['guests']){
+        this.search = {
+          checkIn: params['checkIn'],
+          checkOut: params['checkOut'],
+          location: params['location'],
+          guests: params['guests']
+        };
+        this.fetchData(this.search);
       }
+      else {
+        this.fetchData();
+      }
+ 
     })
   }
 

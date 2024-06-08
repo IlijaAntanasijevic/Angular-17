@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IReview } from '../../../interfaces/i-reviews';
 
 @Component({
@@ -6,16 +6,13 @@ import { IReview } from '../../../interfaces/i-reviews';
   templateUrl: './apartment-detail-reviews.component.html',
   styleUrl: './apartment-detail-reviews.component.css'
 })
-export class ApartmentDetailReviewsComponent implements OnInit {
+export class ApartmentDetailReviewsComponent {
 
 
 
   @Input() reviews: IReview[];
 
 
-  ngOnInit(): void {
-    console.log(this.reviews);
-  }
 
   getRange(rate: number) {
     return Array.from({length: rate}, (_, i) => i + 1);

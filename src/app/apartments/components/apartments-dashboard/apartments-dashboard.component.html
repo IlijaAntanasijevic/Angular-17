@@ -7,44 +7,26 @@
             <div class="row align-items-center">
               <div class="col-xl-4 col-md-4 mb-10 text-lg-start text-center">
                 <div class="box-view-type">
-                  <span class="text-sm-bold neutral-500 number-found">{{totalApartments}} apartments found</span>
+                  <span class="text-sm-bold neutral-500 number-found">{{apartments.length}} apartments found</span>
                 </div>
               </div>
-              <!-- <div class="col-xl-8 col-md-8 mb-10 text-lg-end text-center">
-                <div class="box-item-sort"><a class="btn btn-sort" href="#">
-                    <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8.25 6L5.25 3M5.25 3L2.25 6M5.25 3L5.25 15" stroke="" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M9.75 12L12.75 15M12.75 15L15.75 12M12.75 15L12.75 3" stroke="" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></a>
-                  <div class="item-sort border-1"><span class="text-xs-medium neutral-500 mr-5">Show</span>
-                    <div class="dropdown dropdown-sort border-1-right">
-                      <button class="btn dropdown-toggle" id="dropdownSort2" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" data-bs-display="static"><span>20</span></button>
-                      <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort2">
-                        <li><a class="dropdown-item active" href="#">20</a></li>
-                        <li><a class="dropdown-item" href="#">30</a></li>
-                        <li><a class="dropdown-item" href="#">50</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="item-sort border-1"><span class="text-xs-medium neutral-500 mr-5">Sort by:</span>
-                    <div class="dropdown dropdown-sort border-1">
-                      <button class="btn dropdown-toggle" id="dropdownSort" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false"> <span>Most Viewed</span></button>
-                      <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort" style="margin: 0px;">
-                        <li><a class="dropdown-item active" href="#">Most Viewed</a></li>
-                        <li><a class="dropdown-item" href="#">Recently search</a></li>
-                        <li><a class="dropdown-item" href="#">Most popular</a></li>
-                        <li><a class="dropdown-item" href="#">Top rated</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
+          @if(notApartmentsFound){
+          <div class="text-center">
+            <h1 class="neutral-1000"> <span>We </span>Can’t Find <span>any apartment</span></h1>
+            <div class="d-flex align-items-center justify-content-center mt-45">
+              <a class="btn btn-black-lg-square" routerLink="/home">
+                <svg class="first" width="16" height="16" viewbox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 15L0.999999 8L8 1M1 8L15 8" stroke="" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>HOME
+              </a>
+            </div>
+          </div>
+
+          }
           <div class="box-grid-tours list-tours wow fadeIn">
             <div class="row">
               @for(apartment of displayedApartments; track apartment){

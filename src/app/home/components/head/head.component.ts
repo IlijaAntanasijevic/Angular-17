@@ -1,11 +1,11 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import {provideNativeDateAdapter} from '@angular/material/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { provideNativeDateAdapter } from '@angular/material/core';
 import { map, Observable, startWith } from 'rxjs';
 import { ILocation } from '../../interfaces/i-location';
 import { LocationsRequestsService } from '../../requests/locations-requests.service';
-
-//TODO Search Apartmnets
+import { Router } from '@angular/router';
+import { ISearch } from '../../../apartments/interfaces/i-search';
 
 @Component({
   selector: 'app-head',
@@ -15,41 +15,32 @@ import { LocationsRequestsService } from '../../requests/locations-requests.serv
 })
 export class HeadComponent implements OnInit {
 
-  public totalGuests: number[] = [1,2,3,4,5,6,7,8,9,10];
   constructor(
-    public requestService: LocationsRequestsService
+    public requestService: LocationsRequestsService,
+    private router: Router
   ){}
 
-
-
-  locationControl = new FormControl<string | ILocation>('');
+  public totalGuests: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   options: ILocation[] = [];
   filteredOptions: Observable<ILocation[]>;
+  searchObject: ISearch;
 
   totalNights: number | null = null;
   minDate: Date = new Date();
 
-  form: any = new FormGroup({
-    start:  new FormControl(),
-    end: new FormControl(),
-    guests: new FormControl(1)
+  form = new FormGroup({
+    start: new FormControl('', Validators.required),
+    end: new FormControl('', Validators.required),
+    guests: new FormControl(1),
+    location: new FormControl<string | ILocation>('', Validators.required)
   });
 
   ngOnInit() {
-    this.requestService.getAllLocations().subscribe({
-      next: (data) => {
-        this.options = data  
-        this.initializeFilteredOptions();      
-      },
-      error: (error) => {
-        console.log(error);
-        
-      }
-    })
+    this.fetchData()
   }
 
   private initializeFilteredOptions(): void {
-    this.filteredOptions = this.locationControl.valueChanges.pipe(
+    this.filteredOptions = this.form.controls.location.valueChanges.pipe(
       startWith(''),
       map(value => {
         const name = typeof value === 'string' ? value : value?.name;
@@ -67,25 +58,42 @@ export class HeadComponent implements OnInit {
     return this.options.filter(option => option.name.toLowerCase().includes(filterValue));
   }
 
- 
-  calculateTotalNights(){
-    let startDate = this.form.controls.start.value;
-    let endDate = this.form.controls.end.value;
-
-    if(startDate !== null && endDate !== null){
-      let dateDifference = new Date(endDate).getTime() - new Date(startDate).getTime();
-      this.totalNights = dateDifference / (1000 * 60 * 60 * 24);
-    
-    }  
-    
-    
-    
+  fetchData(): void {
+    this.requestService.getAllLocations().subscribe({
+      next: (data) => {
+        this.options = data  
+        this.initializeFilteredOptions();      
+      },
+      error: (error) => {
+        console.log(error);
+      }
+    });
   }
 
+  calculateTotalNights() {
+    const startDate = this.form.value.start
+    const endDate = this.form.value.end
 
-  public save(): void {
-    console.log(this.form.value);
-    console.log(this.locationControl.value);
+    if (startDate !== null && endDate !== null) {
+      const dateDifference = new Date(endDate).getTime() - new Date(startDate).getTime();
+      this.totalNights = dateDifference / (1000 * 60 * 60 * 24);
+    }  
+  }
+
+  public search(): void {
+    const location = this.form.value.location;
+    //const locationId = typeof location === 'object' && location !== null ? location.id : null;
+    const locationName = typeof location === 'object' && location !== null ? location.name : null;
+
+
+    this.searchObject = { 
+      checkIn: new Date(this.form.value.start),
+      checkOut: new Date(this.form.value.end),
+      location: locationName,
+      guests: this.form.value.guests
+    };
+    
+   this.router.navigate(['/apartments'], {queryParams: this.searchObject})
     
   }
 

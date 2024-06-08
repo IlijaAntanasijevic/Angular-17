@@ -19,7 +19,6 @@ export class PaginatorComponent implements OnChanges {
   ngOnChanges(): void {
     if (this.apartments) {
       this.totalPages = Math.ceil(this.apartments.length / this.perPage);
-      console.log(this.apartments);
     }
   }
 

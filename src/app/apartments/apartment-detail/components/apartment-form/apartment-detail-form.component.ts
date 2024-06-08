@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { IBookingForm } from '../../../interfaces/i-booking';
 
 @Component({
   selector: 'app-apartment-detail-form',
@@ -13,7 +14,7 @@ export class ApartmentDetailFormComponent implements OnInit {
 
   constructor(
     private dialogRef: MatDialogRef<ApartmentDetailFormComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any,
+    @Inject(MAT_DIALOG_DATA) public data: IBookingForm,
   ){}
 
 

@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { delay, map, Observable } from 'rxjs';
 import { IApartment, IApartmentDetail } from '../interfaces/i-apartments';
+import { ISearch } from '../interfaces/i-search';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,6 @@ export class ApartmentsApiService {
     if(topRated){
       return this.http.get<IApartment[]>("assets/data/favoriteApartments.json");
     }
-
     return this.http.get<IApartment[]>("assets/data/apartments.json");
   }
 
@@ -26,6 +26,13 @@ export class ApartmentsApiService {
       return findApartment;
     }));
   }
+
+  getSearchedData(search: ISearch): Observable<IApartment[]> {
+    return this.http.get<IApartment[]>("assets/data/apartments.json").pipe(map((apartments: any) => {
+      let searchApartment = apartments.filter((x: any) => x.city == search.location && search.guests <= x.maxGuest)
+      return searchApartment;
+    }))
+  } 
 
 
 }

@@ -14,6 +14,9 @@ export class ApartmentDetailComponent implements OnInit {
   id: number;
   apartment: IApartmentDetail;
   sliderImages: any;
+  featuresFirstColum: string[];
+  featuresSecondColum: string[];
+
 
   constructor(
     private route: ActivatedRoute,
@@ -34,6 +37,11 @@ export class ApartmentDetailComponent implements OnInit {
       next: (data) => {
         this.apartment = data;
         this.sliderImages = data.images.slice(0,4);
+        let divideFeatures = Math.ceil(data.features.length / 2);
+        this.featuresFirstColum = data.features.slice(0, divideFeatures);
+        this.featuresSecondColum = data.features.slice(divideFeatures);
+        
+        
         
       },
       error: (err) => {

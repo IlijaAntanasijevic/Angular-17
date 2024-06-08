@@ -17,4 +17,5 @@ export interface IApartmentDetail extends IApartment {
   user: IUser
   reviews: IReview[]
   description: string
+  features: string[]
 }

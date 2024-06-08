@@ -180,28 +180,17 @@
                 <div class="card card-body">
                   <div class="row">
                     <div class="col-lg-6">
-                      <p class="text-md-bold">Included:</p>
                       <ul>
-                        <li>Terrace/ Balcony with lounge chairs</li>
-                        <li>Air conditioner</li>
-                        <li>Rain shower</li>
-                        <li>Hand-carved granite bathtub</li>
-                        <li>Coffee and Tea making facilities</li>
-                        <li>Complimentary WiFi connection</li>
-                        <li>Safety box</li>
-                        <li>Minibar</li>
+                        @for(feature of featuresFirstColum; track feature){
+                        <li>{{feature}}</li>
+                        }
                       </ul>
                     </div>
                     <div class="col-lg-6">
-                      <p class="text-md-bold">Excluded:</p>
                       <ul>
-                        <li>Work desk</li>
-                        <li>Flat screen TV with international channel selection</li>
-                        <li>Deluxe custom-made bathroom amenities</li>
-                        <li>Non-smoking</li>
-                        <li>Seating area</li>
-                        <li>24-hour security</li>
-                        <li>Wood or granite flooring</li>
+                        @for(feature of featuresSecondColum; track feature){
+                        <li>{{feature}}</li>
+                        }
                       </ul>
                     </div>
                   </div>
