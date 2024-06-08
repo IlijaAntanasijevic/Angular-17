@@ -2,11 +2,11 @@
 <mat-dialog-content class="mat-typography">
   <div class="container">
     <form [formGroup]="form">
-      <div class="row">
+      <div class="row ">
         <div class="col-sm-3">
           <mat-form-field appearance="fill">
             <mat-label>First name: </mat-label>
-            <input matInput formControlName="firstName">
+            <input matInput formControlName="firstName" class="text-dark">
             @if(form.get('firstName').hasError('required')){
             <mat-error>First name is required</mat-error>
             }
@@ -40,9 +40,12 @@
         <div class="col-sm-3">
           <mat-form-field appearance="fill">
             <mat-label>Phone number: </mat-label>
-            <input matInput formControlName="phone">
+            <input matInput type="number" formControlName="phone">
             @if(form.get('phone').hasError('required')){
             <mat-error>Phone is required</mat-error>
+            }
+            @else if(form.get('phone').hasError('pattern')){
+            <mat-error>Phone number must be between 6 and 13 digits</mat-error>
             }
           </mat-form-field>
         </div>

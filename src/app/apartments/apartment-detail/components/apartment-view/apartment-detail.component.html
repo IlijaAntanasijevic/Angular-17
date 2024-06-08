@@ -1,13 +1,4 @@
 <main class="main">
-  <!-- BACK BUTTON -->
-  <!-- <div class="box-button-book w-25 backBtn">
-    <a class="btn btn-book w-25" href="#">Back
-      <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 15L15 8L8 1M15 8L1 8" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        </path>
-      </svg>
-    </a>
-  </div> -->
   <section class="box-section box-breadcrumb background-body">
     <div class="container">
       <ul class="breadcrumbs">
@@ -32,7 +23,7 @@
           <div class="col-xl-6 col-lg-6">
             <div class="banner-property-detail-1"> <img src="{{apartment.mainImage}}" alt="{{apartment.name}}">
               @if(apartment.images.length > 4){
-              <div class="box-button-abs"> <a class="btn btn-brand-secondary" href="#">
+              <div class="box-button-abs"> <a class="btn btn-brand-secondary">
                   <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M20 8V2.75C20 2.3375 19.6625 2 19.25 2H14C13.5875 2 13.25 2.3375 13.25 2.75V8C13.25 8.4125 13.5875 8.75 14 8.75H19.25C19.6625 8.75 20 8.4125 20 8ZM19.25 0.5C20.495 0.5 21.5 1.505 21.5 2.75V8C21.5 9.245 20.495 10.25 19.25 10.25H14C12.755 10.25 11.75 9.245 11.75 8V2.75C11.75 1.505 12.755 0.5 14 0.5H19.25Z"
@@ -67,65 +58,6 @@
       </div>
     </div>
   </section>
-  <!-- Apartment Amenities  -->
-  <!-- <section class="box-section box-buttons-destination box-buttons-property-detail background-card pt-40">
-    <div class="container-fluid">
-      <div class="box-button-faq wow fadeInRight">
-        <p class="btn btn-border-1 pe-none">
-          <img class="dark-mode" src="assets/imgs/page/room/airport-w.svg" alt="Travile">
-          Airport Transfer
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/safety-box-w.svg" alt="Travile">
-          Safety Box
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/coffee-shop-w.svg" alt="Travile">
-          Balcony
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/massage-w.svg" alt="Travile">
-          Spa Sauna
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/animal-w.svg" alt="Travile">
-          Pet Allowed
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/wifi-w.svg" alt="Travile">
-          Free Wifi
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/hairdryer-w.svg" alt="Travile">
-          Air Dryer
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/air-conditioner-w.svg" alt="Travile">
-          Air Condition
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/loundry-w.svg" alt="Travile">
-          Loundry Service
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/bed-w.svg" alt="Travile">
-          King Size Bed
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/food-w.svg" alt="Travile">
-          Front desk
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/living-w.svg" alt="Travile">
-          Living Area
-        </p>
-        <p class="btn btn-border-1 ">
-          <img class="dark-mode" src="assets/imgs/page/room/living-w.svg" alt="Travile">
-          Living Area
-        </p>
-      </div>
-    </div>
-  </section> -->
   <section class="box-section box-content-tour-detail box-content-room-detail background-body">
     <div class="container">
       <div class="row">
@@ -204,6 +136,7 @@
         <div class="col-lg-4">
           <!-- Booking form -->
           <app-apartment-booking [apartment]="apartment"></app-apartment-booking>
+
           <div class="sidebar-left border-1 background-3">
             <h6 class="text-xl-bold neutral-1000">Agent Information</h6>
             <div class="box-sidebar-content">

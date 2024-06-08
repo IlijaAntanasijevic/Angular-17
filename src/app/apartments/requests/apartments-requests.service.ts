@@ -18,9 +18,15 @@ export class ApartmentsRequestsService {
   }
 
   getAll(search: ISearch = null): Observable<IApartment[]>{
-    if(search){
+
+    if(search && search.location && search.checkIn && search.checkOut && search.guests){
       return this.apiService.getSearchedData(search);
     }
+    else if(search && search.location){
+      return this.apiService.getApartmentsByLocation(search.location)
+    }
+    console.log(search);
+
     return this.apiService.getAll();
   }
 

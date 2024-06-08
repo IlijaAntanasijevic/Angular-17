@@ -29,7 +29,8 @@
                 <div class="card-right"> <span class="rating">{{item.rate}} <span
                       class="text-sm-medium neutral-500">({{item.totalReviews}} reviews)</span></span></div>
               </div>
-              <div class="card-title"> <a class='heading-6 neutral-1000' href='tour-detail.html'>{{item.name}} </a>
+              <div class="card-title"> <a class='heading-6 neutral-1000'
+                  routerLink="/apartments/{{item.id}}">{{item.name}} </a>
                 <p class="neutral-1000">{{item.city}}</p>
               </div>
               <div class="card-program">

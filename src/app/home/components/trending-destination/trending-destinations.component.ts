@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IDestination } from '../../interfaces/i-destination';
 import { LocationsRequestsService } from '../../requests/locations-requests.service';
+import { Router } from '@angular/router';
 
 
-//TODO Search By trending destination
 /* TODO Errors
   - Console error 
 */
@@ -16,7 +16,8 @@ import { LocationsRequestsService } from '../../requests/locations-requests.serv
 export class TrendingDestinationsComponent implements OnInit {
 
   constructor(
-    public requestService: LocationsRequestsService
+    public requestService: LocationsRequestsService,
+    private router: Router
   ){}
 
   data: IDestination[] = [];
@@ -38,5 +39,9 @@ export class TrendingDestinationsComponent implements OnInit {
         console.log(error);
       }
     })
+  }
+
+  searchByDestination(locationName: string): void {
+    this.router.navigate(['/apartments'], {queryParams: {location: locationName}})
   }
 }

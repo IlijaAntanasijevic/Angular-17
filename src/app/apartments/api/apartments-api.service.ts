@@ -34,5 +34,12 @@ export class ApartmentsApiService {
     }))
   } 
 
+  getApartmentsByLocation(location: string): Observable<IApartment[]> {
+    return this.http.get<IApartment[]>("assets/data/apartments.json").pipe(map((apartments: any) => {
+      let searchApartmentByLocation = apartments.filter((x: any) => x.city == location)
+      return searchApartmentByLocation;
+    }))
+  }
+
 
 }

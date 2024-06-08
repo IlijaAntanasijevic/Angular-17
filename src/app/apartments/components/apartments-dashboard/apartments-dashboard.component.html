@@ -27,15 +27,21 @@
               <div class="col-xl-10 col-md-8 mb-12 text-lg-start text-center mb-2">
 
                 <mat-chip-set>
+                  @if(search.checkIn) {
                   <mat-chip>{{search.checkIn | date: 'd/MMM/yyyy'}} - {{search.checkOut | date:'d/MMM/yyyy'}}</mat-chip>
+                  }
+
                   <mat-chip>{{search.location}}</mat-chip>
+
+                  @if(search.guests){
                   <mat-chip> Guests: <span>{{search.guests}}</span></mat-chip>
+
+                  }
                 </mat-chip-set>
               </div>
             </div>
           </div>
           }
-
 
 
           <div class="box-grid-tours list-tours wow fadeIn">
@@ -44,14 +50,6 @@
               <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="card-journey-small background-card">
                   <div class="card-image">
-                    <!-- Wish  -->
-                    <!-- <a class="wish" href="#">
-                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17.071 10.1422L11.4141 15.7991C10.6331 16.5801 9.36672 16.5801 8.58568 15.7991L2.92882 10.1422C0.9762 8.1896 0.9762 5.02378 2.92882 3.07116C4.88144 1.11853 8.04727 1.11853 9.99989 3.07116C11.9525 1.11853 15.1183 1.11853 17.071 3.07116C19.0236 5.02378 19.0236 8.1896 17.071 10.1422Z"
-                          stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </a> -->
                     <img src="assets/imgs/page/tour/tour.png" alt="Travila">
                   </div>
                   <div class="card-info background-card">

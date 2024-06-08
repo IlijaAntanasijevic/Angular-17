@@ -28,11 +28,13 @@ export class ApartmentsDashboardComponent implements OnInit {
   }
 
   fetchData(search: ISearch = null): void {    
+    console.log(search);
+    
       this.requestService.getAll(search).subscribe({
         next: (data) => {
           this.notApartmentsFound = data.length === 0;
           this.apartments = data;
-          this.displayedApartments = this.apartments.slice(0, 9); 
+          this.displayedApartments = this.apartments.slice(0, 9);           
         },
         error: (err) => {
           console.log(err);
@@ -51,8 +53,15 @@ export class ApartmentsDashboardComponent implements OnInit {
         };
         this.searchService.setData(this.search);
         this.fetchData(this.search);
-
-        
+      }
+      else if(params['location']){
+        this.search = {
+          checkIn: null,
+          checkOut: null,
+          location: params['location'],
+          guests: null
+        }
+        this.fetchData(this.search);
       }
       else {
         this.fetchData();
@@ -67,9 +76,5 @@ export class ApartmentsDashboardComponent implements OnInit {
       top: 0,
       left: 0
     })
-  }
-
-  formatDate(date: Date) {
-    return date;
   }
 }

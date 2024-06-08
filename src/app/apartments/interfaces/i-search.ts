@@ -1,7 +1,7 @@
 export interface ISearch {
-  checkIn: Date
-  checkOut: Date
-  location: string
+  checkIn: Date | null
+  checkOut: Date | null
+  location: string 
   //locationId: number
-  guests: number 
+  guests: number | null
 } 

@@ -29,7 +29,7 @@ export class ApartmentDetailFormComponent implements OnInit {
     firstName: new FormControl("", Validators.required),
     lastName: new FormControl("", Validators.required),
     email: new FormControl("", [Validators.required, Validators.email]),
-    phone: new FormControl("", Validators .required)
+    phone: new FormControl("", [Validators.required, Validators.pattern(/^\d{6,13}$/)])
   });
 
 
@@ -37,10 +37,9 @@ export class ApartmentDetailFormComponent implements OnInit {
     this.isBookingSuccessful = true;
     setTimeout(() => {
       this.close(true);
-    },3000)
+    },2000)
   }
 
-  
   close(state: boolean = false): void {
     this.dialogRef.close(state);
   }

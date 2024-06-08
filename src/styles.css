@@ -1488,11 +1488,11 @@ h6,
 } */
 
 [data-bs-theme=dark] .card-popular .card-info .card-title:hover,
-[data-bs-theme=dark] .card-journey-big .card-info .card-title a:hover {
+[data-bs-theme=dark] .card-journey-big .card-info .card-title button:hover {
   color: var(--bs-brand-secondary);
 }
 
-[data-bs-theme=dark] .card-popular .card-info .card-meta .card-button a svg {
+[data-bs-theme=dark] .card-popular .card-info .card-meta .card-button button svg {
   stroke: var(--bs-color-grey);
 }
 
@@ -3751,7 +3751,7 @@ label {
   font-weight: 400;
 }
 
-.card-popular .card-info .card-meta .card-button a {
+.card-popular .card-info .card-meta .card-button button {
   display: inline-block;
   height: 27px;
   width: 27px;
@@ -3761,15 +3761,15 @@ label {
   background-color: var(--bs-neutral-100);
 }
 
-.card-popular .card-info .card-meta .card-button a svg {
+.card-popular .card-info .card-meta .card-button button svg {
   stroke: var(--bs-neutral-1000);
 }
 
-.card-popular .card-info .card-meta .card-button a:hover {
+.card-popular .card-info .card-meta .card-button button:hover {
   background-color: var(--bs-neutral-1000);
 }
 
-.card-popular .card-info .card-meta .card-button a:hover svg {
+.card-popular .card-info .card-meta .card-button button:hover svg {
   stroke: var(--bs-neutral-0);
 }
 
@@ -3876,7 +3876,7 @@ label {
   text-align: right;
 }
 
-.card-popular-2 .card-meta .card-button a {
+.card-popular-2 .card-meta .card-button button {
   display: inline-block;
   height: 27px;
   width: 27px;
@@ -3886,7 +3886,7 @@ label {
   background-color: var(--bs-neutral-0);
 }
 
-.card-popular-2 .card-meta .card-button a svg {
+.card-popular-2 .card-meta .card-button button svg {
   stroke: var(--bs-neutral-1000);
 }
 
@@ -4978,25 +4978,25 @@ label {
   min-width: 27px;
 }
 
-.card-spot .card-info .card-right .card-button a {
+.card-spot .card-info .card-right .card-button button {
   display: inline-block;
-  height: 27px;
-  width: 27px;
+  height: 29px;
+  width: 29px;
   text-align: center;
   line-height: 24px;
   border-radius: 50%;
   background-color: #F2F4F6;
 }
 
-.card-spot .card-info .card-right .card-button a svg {
+.card-spot .card-info .card-right .card-button button svg {
   stroke: var(--bs-color-black);
 }
 
-.card-spot .card-info .card-right .card-button a:hover {
+.card-spot .card-info .card-right .card-button button:hover {
   background-color: var(--bs-neutral-1000);
 }
 
-.card-spot .card-info .card-right .card-button a:hover svg {
+.card-spot .card-info .card-right .card-button button:hover svg {
   stroke: var(--bs-neutral-0);
 }
 
@@ -5394,7 +5394,7 @@ label {
   justify-content: space-between;
 }
 
-.card-team.card-team-2 .card-info .card-team-bottom .card-button a {
+.card-team.card-team-2 .card-info .card-team-bottom .card-button button {
   display: inline-block;
   height: 27px;
   width: 27px;
@@ -5404,15 +5404,15 @@ label {
   background-color: var(--bs-button-bg-2);
 }
 
-.card-team.card-team-2 .card-info .card-team-bottom .card-button a svg {
+.card-team.card-team-2 .card-info .card-team-bottom .card-button button svg {
   stroke: var(--bs-neutral-1000);
 }
 
-.card-team.card-team-2 .card-info .card-team-bottom .card-button a:hover {
+.card-team.card-team-2 .card-info .card-team-bottom .card-button button:hover {
   background-color: var(--bs-neutral-1000);
 }
 
-.card-team.card-team-2 .card-info .card-team-bottom .card-button a:hover svg {
+.card-team.card-team-2 .card-info .card-team-bottom .card-button button:hover svg {
   stroke: var(--bs-neutral-0);
 }
 

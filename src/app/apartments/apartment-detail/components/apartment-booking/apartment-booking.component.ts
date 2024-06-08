@@ -56,7 +56,8 @@ export class ApartmentBookingComponent implements OnInit {
         checkIn: this.form.get('start').value,
         checkOut: this.form.get('end').value,
         guests: this.form.get('guests').value
-      }
+      },
+      disableClose: true
     });
 
     dialogRef.afterClosed().subscribe(result => {

@@ -4,9 +4,8 @@ import { FullNamePipe } from '../../../pipes/full-name.pipe';
 import { SharedModule } from '../../shared/shared.module';
 
 
-//TODO?? - Fix view all photos / Slider??
+//TODO - Fix view all photos / Slider??
 
-//TODO - Apartment detail without selected dates????
 @NgModule({
   declarations: [],
   imports: [
