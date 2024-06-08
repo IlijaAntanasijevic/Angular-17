@@ -9,6 +9,7 @@ import { ApartmentDetailFormComponent } from './apartment-detail/components/apar
 import { SharedModule } from '../shared/shared.module';
 import { FullNamePipe } from "../../pipes/full-name.pipe";
 import { PaginatorComponent } from './components/paginator/paginator.component';
+import { ApartmentBookingComponent } from './apartment-detail/components/apartment-booking/apartment-booking.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { PaginatorComponent } from './components/paginator/paginator.component';
         ApartmentDetailComponent,
         ApartmentDetailReviewsComponent,
         ApartmentDetailFormComponent,
+        ApartmentBookingComponent,
         PaginatorComponent
     ],
     imports: [

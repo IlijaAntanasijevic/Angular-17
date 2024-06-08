@@ -2,6 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { IBookingForm } from '../../../interfaces/i-booking';
+import { SearchService} from '../../../services/search-service.service';
 
 @Component({
   selector: 'app-apartment-detail-form',
@@ -15,12 +16,16 @@ export class ApartmentDetailFormComponent implements OnInit {
   constructor(
     private dialogRef: MatDialogRef<ApartmentDetailFormComponent>,
     @Inject(MAT_DIALOG_DATA) public data: IBookingForm,
+    private searchService: SearchService
+
   ){}
 
 
   ngOnInit(): void {
    // throw new Error('Method not implemented.');
-   console.log(this.data);
+    console.log(this.searchService.getData);
+    
+   //console.log(this.data);
    
   }
 
@@ -33,7 +38,6 @@ export class ApartmentDetailFormComponent implements OnInit {
 
 
   save(): void {
-
     this.isBookingSuccessful = true;
     setTimeout(() => {
       this.close(true);

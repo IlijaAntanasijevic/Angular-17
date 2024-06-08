@@ -4,6 +4,7 @@ import { ApartmentsRequestsService } from '../../../requests/apartments-requests
 import { IApartmentDetail } from '../../../interfaces/i-apartments';
 import { MatDialog } from '@angular/material/dialog';
 import { ApartmentDetailFormComponent } from '../apartment-form/apartment-detail-form.component';
+import { SearchService } from '../../../services/search-service.service';
 
 @Component({
   selector: 'app-apartment-detail',
@@ -22,13 +23,16 @@ export class ApartmentDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private requestService: ApartmentsRequestsService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private searchService: SearchService
   ){}
   
 
   ngOnInit(): void {
     this.fetchData();
     this.scrollToTop();
+    console.log(this.searchService.getData);
+    
   }
 
   fetchData(): void {

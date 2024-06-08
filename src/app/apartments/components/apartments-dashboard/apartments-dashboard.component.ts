@@ -3,6 +3,7 @@ import { IApartment } from '../../interfaces/i-apartments';
 import { ApartmentsRequestsService } from '../../requests/apartments-requests.service';
 import { ActivatedRoute } from '@angular/router';
 import { ISearch } from '../../interfaces/i-search';
+import { SearchService} from '../../services/search-service.service';
 
 @Component({
   selector: 'app-apartments-dashboard',
@@ -13,7 +14,8 @@ export class ApartmentsDashboardComponent implements OnInit {
 
   constructor(
     private requestService: ApartmentsRequestsService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private searchService: SearchService
   ) {}
 
   apartments: IApartment[];
@@ -47,6 +49,7 @@ export class ApartmentsDashboardComponent implements OnInit {
           location: params['location'],
           guests: params['guests']
         };
+        this.searchService.setData(this.search);
         this.fetchData(this.search);
         //this.search.checkIn = this.formatDate(new Date(this.search.checkIn)); 
         
