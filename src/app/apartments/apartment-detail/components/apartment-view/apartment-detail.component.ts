@@ -39,6 +39,8 @@ export class ApartmentDetailComponent implements OnInit {
       next: (data) => {
         this.apartment = data;
         this.sliderImages = data.images.slice(0,4);
+        console.log(this.sliderImages);
+        
         let divideFeatures = Math.ceil(data.features.length / 2);
         this.featuresFirstColum = data.features.slice(0, divideFeatures);
         this.featuresSecondColum = data.features.slice(divideFeatures);

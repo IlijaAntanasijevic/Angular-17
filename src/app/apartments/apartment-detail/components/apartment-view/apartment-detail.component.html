@@ -48,7 +48,7 @@
 
             @for(image of sliderImages; track image){
             <div class="banner-property-detail-2">
-              <img src="assets/imgs/page/property/banner3.png" alt="Travile">
+              <img src="{{image.path}}" alt="{{image.path}}">
             </div>
 
             }
@@ -142,7 +142,7 @@
             <div class="box-sidebar-content">
               <div class="box-agent-support">
                 <div class="card-author">
-                  <div class="card-author-image"> <img src="assets/imgs/page/property/author.png" alt="Travila"></div>
+                  <div class="card-author-image"> <img src="{{apartment.user.avatar}}" alt="user-Avatar" /></div>
                   <div class="card-author-info">
                     <p class="text-lg-bold neutral-1000">{{apartment.user | fullName}}
                     </p>

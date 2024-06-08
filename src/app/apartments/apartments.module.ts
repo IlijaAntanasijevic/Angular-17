@@ -7,7 +7,7 @@ import { ApartmentDetailComponent } from './apartment-detail/components/apartmen
 import { ApartmentDetailReviewsComponent } from './apartment-detail/components/apartment-reviews/apartment-detail-reviews.component';
 import { ApartmentDetailFormComponent } from './apartment-detail/components/apartment-form/apartment-detail-form.component';
 import { SharedModule } from '../shared/shared.module';
-import { FullNamePipe } from "../../pipes/full-name.pipe";
+import { FullNamePipe } from "../pipes/full-name.pipe";
 import { PaginatorComponent } from './components/paginator/paginator.component';
 import { ApartmentBookingComponent } from './apartment-detail/components/apartment-booking/apartment-booking.component';
 

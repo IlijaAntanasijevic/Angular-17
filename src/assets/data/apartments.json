@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Test 1",
-    "mainImage": "assets/imgs/page/homepage1/journey3.png",
+    "mainImage": "assets/images/journey3.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "name": "Test 2",
-    "mainImage": "assets/imgs/page/homepage1/journey2.png",
+    "mainImage": "assets/images/journey2.png",
     "price": 58.25,
     "totalReviews": 670,
     "rate": 4.95,
@@ -23,7 +23,7 @@
   {
     "id": 3,
     "name": "Test 3",
-    "mainImage": "assets/imgs/page/homepage1/journey4.png",
+    "mainImage": "assets/images/journey4.png",
     "price": 92.25,
     "totalReviews": 350,
     "rate": 4.45,
@@ -34,7 +34,7 @@
   {
     "id": 4,
     "name": "Test 4",
-    "mainImage": "assets/imgs/page/homepage1/journey2.png",
+    "mainImage": "assets/images/journey1.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
@@ -44,7 +44,7 @@
   {
     "id": 5,
     "name": "Test 5",
-    "mainImage": "assets/imgs/page/homepage1/journey3.png",
+    "mainImage": "assets/images/journey1.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
@@ -55,7 +55,7 @@
   {
     "id": 6,
     "name": "Test 6",
-    "mainImage": "assets/imgs/page/homepage1/journey4.png",
+    "mainImage": "assets/images/journey2.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
@@ -66,7 +66,7 @@
   {
     "id": 7,
     "name": "Test 7",
-    "mainImage": "assets/imgs/page/homepage1/journey5.png",
+    "mainImage": "assets/images/journey3.png",
     "price": 68.50,
     "totalReviews": 450,
     "rate": 4.35,
@@ -76,7 +76,7 @@
   {
     "id": 8,
     "name": "Test 8",
-    "mainImage": "assets/imgs/page/homepage1/journey6.png",
+    "mainImage": "assets/images/journey4.png",
     "price": 72.00,
     "totalReviews": 300,
     "rate": 4.50,
@@ -86,7 +86,7 @@
   {
     "id": 9,
     "name": "Test 9",
-    "mainImage": "assets/imgs/page/homepage1/journey7.png",
+    "mainImage": "assets/images/journey3.png",
     "price": 85.75,
     "totalReviews": 600,
     "rate": 4.75,
@@ -96,7 +96,7 @@
   {
     "id": 10,
     "name": "Test 10",
-    "mainImage": "assets/imgs/page/homepage1/journey8.png",
+    "mainImage": "assets/images/journey2.png",
     "price": 58.25,
     "totalReviews": 700,
     "rate": 4.95,
@@ -106,7 +106,7 @@
   {
     "id": 11,
     "name": "Test 11",
-    "mainImage": "assets/imgs/page/homepage1/journey9.png",
+    "mainImage": "assets/images/journey1.png",
     "price": 67.00,
     "totalReviews": 550,
     "rate": 4.50,
@@ -116,7 +116,7 @@
   {
     "id": 12,
     "name": "Test 12",
-    "mainImage": "assets/imgs/page/homepage1/journey10.png",
+    "mainImage": "assets/images/journey2.png",
     "price": 92.00,
     "totalReviews": 400,
     "rate": 4.80,
@@ -126,7 +126,7 @@
   {
     "id": 13,
     "name": "Test 13",
-    "mainImage": "assets/imgs/page/homepage1/journey11.png",
+    "mainImage": "assets/images/journey3.png",
     "price": 75.25,
     "totalReviews": 350,
     "rate": 4.55,
@@ -136,27 +136,27 @@
   {
     "id": 14,
     "name": "Test 14",
-    "mainImage": "assets/imgs/page/homepage1/journey12.png",
+    "mainImage": "assets/images/journey1.png",
     "price": 60.00,
     "totalReviews": 500,
     "rate": 4.60,
     "maxGuest": 4,
-    "city": "Amsterdam"
+    "city": "Venice"
   },
   {
     "id": 15,
     "name": "Test 15",
-    "mainImage": "assets/imgs/page/homepage1/journey13.png",
+    "mainImage": "assets/images/journey4.png",
     "price": 95.00,
     "totalReviews": 250,
     "rate": 4.65,
     "maxGuest": 5,
-    "city": "Amsterdam"
+    "city": "Wien"
   },
   {
     "id": 16,
     "name": "Test 16",
-    "mainImage": "assets/imgs/page/homepage1/journey14.png",
+    "mainImage": "assets/images/journey2.png",
     "price": 85.75,
     "totalReviews": 550,
     "rate": 4.25,
@@ -166,7 +166,7 @@
   {
     "id": 17,
     "name": "Test 17",
-    "mainImage": "assets/imgs/page/homepage1/journey15.png",
+    "mainImage": "assets/images/journey4.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
@@ -176,7 +176,7 @@
   {
     "id": 18,
     "name": "Test 18",
-    "mainImage": "assets/imgs/page/homepage1/journey16.png",
+    "mainImage": "assets/images/journey1.png",
     "price": 88.00,
     "totalReviews": 600,
     "rate": 4.90,
@@ -186,7 +186,7 @@
   {
     "id": 19,
     "name": "Test 19",
-    "mainImage": "assets/imgs/page/homepage1/journey17.png",
+    "mainImage": "assets/images/journey3.png",
     "price": 65.00,
     "totalReviews": 450,
     "rate": 4.40,
@@ -196,7 +196,7 @@
   {
     "id": 20,
     "name": "Test 20",
-    "mainImage": "assets/imgs/page/homepage1/journey18.png",
+    "mainImage": "assets/images/journey4.png",
     "price": 58.25,
     "totalReviews": 670,
     "rate": 4.95,

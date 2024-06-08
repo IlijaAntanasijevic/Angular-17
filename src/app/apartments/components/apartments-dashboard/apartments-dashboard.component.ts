@@ -27,9 +27,7 @@ export class ApartmentsDashboardComponent implements OnInit {
     this.getQueryData();
   }
 
-  fetchData(search: ISearch = null): void {    
-    console.log(search);
-    
+  fetchData(search: ISearch = null): void {      
       this.requestService.getAll(search).subscribe({
         next: (data) => {
           this.notApartmentsFound = data.length === 0;
@@ -54,6 +52,7 @@ export class ApartmentsDashboardComponent implements OnInit {
         this.searchService.setData(this.search);
         this.fetchData(this.search);
       }
+      //Search by trending destination
       else if(params['location']){
         this.search = {
           checkIn: null,

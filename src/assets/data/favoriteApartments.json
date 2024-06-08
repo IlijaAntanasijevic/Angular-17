@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Test 1",
-    "mainImage": "assets/imgs/page/homepage1/journey3.png",
+    "mainImage": "assets/images/journey4.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "name": "Test 2",
-    "mainImage": "assets/imgs/page/homepage1/journey2.png",
+    "mainImage": "assets/images/journey2.png",
     "price": 58.25,
     "totalReviews": 670,
     "rate": 4.95,
@@ -23,7 +23,7 @@
   {
     "id": 3,
     "name": "Test 3",
-    "mainImage": "assets/imgs/page/homepage1/journey4.png",
+    "mainImage": "assets/images/journey4.png",
     "price": 92.25,
     "totalReviews": 350,
     "rate": 4.45,
@@ -34,7 +34,7 @@
   {
     "id": 4,
     "name": "Test 4",
-    "mainImage": "assets/imgs/page/homepage1/journey2.png",
+    "mainImage": "assets/images/journey2.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
@@ -44,7 +44,7 @@
   {
     "id": 5,
     "name": "Test 5",
-    "mainImage": "assets/imgs/page/homepage1/journey3.png",
+    "mainImage": "assets/images/journey3.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
@@ -55,7 +55,7 @@
   {
     "id": 6,
     "name": "Test 6",
-    "mainImage": "assets/imgs/page/homepage1/journey4.png",
+    "mainImage": "assets/images/journey4.png",
     "price": 48.25,
     "totalReviews": 550,
     "rate": 4.25,
