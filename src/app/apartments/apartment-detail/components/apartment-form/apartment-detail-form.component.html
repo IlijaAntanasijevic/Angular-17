@@ -71,7 +71,8 @@
 
         <div class="col-sm-6">
           <mat-dialog-actions align="end">
-            <button mat-flat-button color="primary" (click)="save()" [disabled]="form.invalid">Book</button>
+            <button mat-flat-button color="primary" (click)="save()"
+              [disabled]="form.invalid || isBookingSuccessful">Book</button>
           </mat-dialog-actions>
         </div>
 

@@ -441,41 +441,6 @@ a {
   color: #319F1F;
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown .dropdown-menu.show {
-  border: thin solid var(--bs-neutral-200);
-  box-shadow: 0px 9px 26px 0px rgba(31, 31, 51, 0.06);
-  background-color: var(--bs-neutral-0);
-  border-radius: 10px;
-  padding: 0;
-  overflow: hidden;
-}
-
-.dropdown .dropdown-menu.show .dropdown-item {
-  padding: 10px 20px;
-  color: var(--bs-neutral-900);
-  font-size: 14px;
-}
-
-.dropdown .dropdown-menu.show .dropdown-item.active {
-  color: var(--bs-neutral-0);
-  text-decoration: none;
-  background-color: var(--bs-neutral-700);
-}
-
-.dropdown .dropdown-menu.show .dropdown-item:active {
-  color: #fff;
-  text-decoration: none;
-  background-color: var(--bs-neutral-700);
-}
-
-.dropdown.dropdown-sort .dropdown-menu.show {
-  border-radius: 10px;
-  margin-top: 20px;
-}
 
 .display-1 {
   font-size: 96px;
@@ -1524,26 +1489,7 @@ h6,
   stroke: #f2f2f2;
 }
 
-/* 
-[data-bs-theme=dark] .block-testimonials .testimonials-left::before {
-  background: url(../imgs/page/homepage1/plane-w.png) no-repeat center;
-}
 
-[data-bs-theme=dark] .icon-lang {
-  background: url(../imgs/template/icons/lang-w.svg) no-repeat left center;
-}
-
-[data-bs-theme=dark] .icon-lang span {
-  background: url(../imgs/template/icons/arrow-down-sm-w.svg) right center no-repeat;
-}
-
-[data-bs-theme=dark] .icon-cart span {
-  background: url(../imgs/template/icons/arrow-down-sm-w.svg) no-repeat right center;
-}
-
-[data-bs-theme=dark] .card-flight .card-info .card-route .icon-route {
-  background: url(../imgs/template/icons/route.svg) no-repeat center;
-} */
 
 [data-bs-theme=dark] .card-why-travel .card-info .card-title:hover,
 [data-bs-theme=dark] .card-why-travel .card-info .card-link:hover {
@@ -1555,43 +1501,6 @@ h6,
   stroke: var(--bs-warning);
 }
 
-/* 
-[data-bs-theme=dark] .box-testimonials-2 {
-  background: url(../imgs/page/homepage2/bg-testimonials-dark.png) no-repeat top 100px right 40px;
-}
-
-[data-bs-theme=dark] .box-testimonials-2::before {
-  background: url(../imgs/page/homepage2/bg-testimonials2-dark.png) no-repeat left bottom;
-}
-
-[data-bs-theme=dark] .box-testimonials-4 {
-  background-image: url(../imgs/page/homepage7/bg-testimonial-dark.png);
-  background-position: bottom 20px left 17%;
-}
-
-[data-bs-theme=dark] .btn.btn-dropdown-search:after {
-  background-image: url(../imgs/page/homepage2/dropdown-w.svg);
-}
-
-[data-bs-theme=dark] .box-calendar-date::before {
-  background-image: url(../imgs/page/homepage2/dropdown-w.svg);
-}
-
-[data-bs-theme=dark] .accordion-button::after {
-  background-image: url(../imgs/template/icons/open-faq-dark.png);
-}
-
-[data-bs-theme=dark] .accordion-button:not(.collapsed)::after {
-  background-image: url(../imgs/template/icons/close-faq-dark.png);
-}
-
-[data-bs-theme=dark] .box-faqs-inner {
-  background-image: url(../imgs/page/homepage3/bg-faq2-dark.png);
-}
-
-[data-bs-theme=dark] .box-faqs {
-  background-image: url(../imgs/page/homepage3/bg-faq-dark.png);
-} */
 
 [data-bs-theme=dark] .footer-type-3 .block-socials-footer a.icon-socials:hover {
   color: var(--bs-warning);
@@ -1606,47 +1515,7 @@ h6,
   color: #FEFA17 !important;
 }
 
-/* [data-bs-theme=dark] .box-love-us-inner {
-  background-image: url(../imgs/page/homepage3/map.png);
-}
 
-[data-bs-theme=dark] .box-banner-home4 {
-  background-image: url(../imgs/page/homepage4/bg-banner-dark.png);
-}
-
-[data-bs-theme=dark] .box-how-it-work {
-  background-image: url(../imgs/page/homepage4/bg-how-white.png);
-}
-
-[data-bs-theme=dark] .box-testimonials-3 {
-  background-image: url(../imgs/page/homepage4/bg-testimonial.png);
-  background-position: left 10px bottom 10px;
-}
-
-[data-bs-theme=dark] .box-testimonials-3::before {
-  background-image: url(../imgs/page/homepage4/bg-testimonial2.png);
-  background-repeat: no-repeat;
-}
-
-[data-bs-theme=dark] .top-bar-2 .text-header .text-unlock {
-  background: url(../imgs/template/icons/icon1.svg) no-repeat left center;
-}
-
-[data-bs-theme=dark] .box-security {
-  background-image: url(../imgs/page/homepage6/bg-security-dark.png);
-}
-
-[data-bs-theme=dark] .box-news-2 {
-  background-image: url(../imgs/page/homepage6/bg-news-dark.png);
-}
-
-[data-bs-theme=dark] .box-banner-home8 {
-  background-image: url(../imgs/page/homepage8/bg-banner-dark.png);
-}
-
-[data-bs-theme=dark] .box-our-services {
-  background-image: url(../imgs/page/homepage8/bg-service-dark.png);
-} */
 
 [data-bs-theme=dark] .box-testimonials-5 {
   background-image: none;
@@ -1668,37 +1537,6 @@ h6,
   stroke: var(--bs-brand-secondary);
 }
 
-/* [data-bs-theme=dark] .box-properties-area {
-  background-image: url(../imgs/page/homepage9/bg-area-dark.png);
-}
-
-[data-bs-theme=dark] .box-featured-propoerties {
-  background-image: url(../imgs/page/homepage9/bg-feature-dark.png);
-}
-
-[data-bs-theme=dark] .box-skyward {
-  background-image: url(../imgs/page/homepage10/bg-skyward-dark.png);
-}
-
-[data-bs-theme=dark] .box-list-flights .item-flight .flight-route .flight-route-icon {
-  background-image: url(../imgs/page/homepage10/route-dark.svg);
-}
-
-[data-bs-theme=dark] .box-testimonials-6 {
-  background-image: none;
-}
-
-[data-bs-theme=dark] .box-install-app-3 .block-install-apps::before {
-  background-image: url(../imgs/page/homepage10/bg-plane-dark.png);
-}
-
-[data-bs-theme=dark] .box-how-it-work-inner {
-  background-image: url(../imgs/page/homepage10/bg-how-dark.png);
-}
-
-[data-bs-theme=dark] .cb-container input:checked~.checkmark {
-  background-image: url(../imgs/template/icons/checked-dark.svg);
-} */
 
 [data-bs-theme=dark] .link-see-more:hover {
   color: var(--bs-brand-primary);
@@ -1708,57 +1546,12 @@ h6,
   background-color: var(--bs-button-bg);
 }
 
-/*
-[data-bs-theme=dark] .dropdown-sort .dropdown-toggle,
-[data-bs-theme=dark] .dropdown-sort #dropdownSort {
-  background-image: url(../imgs/template/icons/dropdown-dark.svg);
-}
 
- [data-bs-theme=dark] .box-filters-sidebar .block-filter .item-collapse {
-  background-image: url(../imgs/template/icons/arrow-up-dark.svg);
-}
-
-[data-bs-theme=dark] .box-filters-sidebar .block-filter .item-collapse.collapsed-item {
-  background-image: url(../imgs/template/icons/arrow-down-filter-dark.svg);
-}
-
-[data-bs-theme=dark] .close-popup,
-[data-bs-theme=dark] .close-popup-signin {
-  background-image: url(../imgs/template/icons/close-w.png);
-  background-position: center;
-}
-
-[data-bs-theme=dark] .form-group input.username {
-  background-image: url(../imgs/template/popup/username-w.svg);
-}
-
-[data-bs-theme=dark] .form-group input.password {
-  background-image: url(../imgs/template/popup/pass-w.svg);
-}
-
-[data-bs-theme=dark] .form-group input.email {
-  background-image: url(../imgs/template/popup/email-w.svg);
-} */
 
 [data-bs-theme=dark] #scrollUp svg {
   fill: var(--bs-neutral-0);
 }
 
-/* [data-bs-theme=dark] .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li.has-children .menu-expand i {
-  background: url(../imgs/template/icons/arrow-right-big-w.png) no-repeat center;
-}
-
-[data-bs-theme=dark] .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li.has-children.active>.menu-expand i {
-  background: url(../imgs/template/icons/arrow-down-big-w.png) no-repeat center;
-}
-
-[data-bs-theme=dark] .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-logo .burger-icon {
-  background-image: url(../imgs/template/icons/close-w.png);
-}
-
-[data-bs-theme=dark] .box-search-style-2 .btn-search-submit {
-  background-image: url(../imgs/page/blog/icon-search-dark.png);
-} */
 
 .mobile-menu {
   margin-top: 30px;
@@ -3403,50 +3196,6 @@ label {
   margin-bottom: 13px;
 }
 
-/* .card-journey-small .card-info .card-facilities .item-facilities p.speed {
-  background-image: url(../imgs/page/homepage8/speed.svg);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.gear {
-  background-image: url(../imgs/page/homepage8/engineering.svg);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.fuel {
-  background-image: url(../imgs/page/homepage8/fuel.svg);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.seats {
-  background-image: url(../imgs/page/homepage8/seat.svg);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.room {
-  background-image: url(../imgs/page/homepage9/room.svg);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.pax {
-  background-image: url(../imgs/page/hotel/pax.svg);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.size {
-  background-image: url(../imgs/page/homepage9/size.svg);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.bed {
-  background-image: url(../imgs/page/homepage9/bed.svg);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.bathroom {
-  background-image: url(../imgs/page/homepage9/bathroom.svg);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.parkin {
-  background-image: url(../imgs/page/property/parking.png);
-}
-
-.card-journey-small .card-info .card-facilities .item-facilities p.pet {
-  background-image: url(../imgs/page/property/pet.png);
-} */
-
 .card-journey-small .card-info .card-rating {
   position: absolute;
   top: -19px;
@@ -3662,34 +3411,6 @@ label {
 
 .card-journey-small.card-grid-real .card-info .card-location {
   margin-bottom: 27px;
-}
-
-.card-journey-small.card-grid-car {
-  border: 1px solid var(--bs-border-color);
-  background-color: var(--bs-neutral-0) !important;
-}
-
-.card-journey-small.card-grid-car .card-info {
-  border: 1px solid var(--bs-border-color);
-  border-radius: 32px;
-  margin: 0px -1px -1px -1px;
-}
-
-.card-journey-small.card-grid-car .card-info .card-location {
-  margin-bottom: 27px;
-}
-
-.card-journey-small.card-grid-car .card-image {
-  line-height: 326px;
-}
-
-.card-journey-small.card-grid-car .card-image img {
-  max-width: 100%;
-  height: auto;
-  min-width: auto;
-  margin: auto;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .card-popular {
@@ -3933,299 +3654,6 @@ label {
   background-color: var(--bs-warning);
 }
 
-.card-flight {
-  border-radius: 24px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  max-width: 612px;
-  width: 100%;
-  min-width: 612px;
-  margin-bottom: 24px;
-}
-
-.card-flight .card-image {
-  max-width: 263px;
-  width: 100%;
-  height: 311px;
-}
-
-.card-flight .card-image .wish {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 32px;
-  height: 32px;
-  background-color: rgba(255, 255, 255, 0.8196078431);
-  border-radius: 50%;
-  text-align: center;
-  line-height: 32px;
-  z-index: 12;
-}
-
-.card-flight .card-image .wish svg {
-  stroke: var(--bs-neutral-1000);
-}
-
-.card-flight .card-image .wish:hover svg {
-  stroke: var(--bs-warning);
-  fill: var(--bs-warning);
-}
-
-.card-flight .card-image img {
-  display: block;
-  height: auto;
-  min-height: 100%;
-  max-width: none;
-  min-width: 100%;
-  max-height: 100%;
-}
-
-.card-flight .card-info {
-  padding: 38px 31px;
-  width: calc(100% + 30px);
-  margin-left: -30px;
-  background-color: var(--bs-neutral-0);
-  border-radius: 24px;
-  height: 311px;
-  border: 1px solid var(--bs-border-color);
-}
-
-.card-flight .card-info .card-date {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.card-flight .card-info .card-date .date-1 {
-  color: var(--bs-neutral-500);
-  /* background: url(../imgs/template/icons/clock.svg) no-repeat left center; */
-  display: inline-block;
-  padding: 0px 0px 0px 20px;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-}
-
-.card-flight .card-info .card-date .line {
-  display: inline-block;
-  margin: 0px 16px;
-  height: 1px;
-  width: 18px;
-  /* background: url(../imgs/template/icons/line.png) no-repeat center; */
-}
-
-.card-flight .card-info .card-route {
-  display: flex;
-  align-items: center;
-  margin-bottom: 18px;
-}
-
-.card-flight .card-info .card-route .icon-route {
-  display: inline-block;
-  margin: 0px 18px;
-  height: 24px;
-  width: 24px;
-  /* background: url(../imgs/template/icons/icon-route.svg) no-repeat center; */
-}
-
-.card-flight .card-info .card-price {
-  display: flex;
-  align-items: center;
-}
-
-.card-flight .card-info .card-price .card-price-1 {
-  position: relative;
-  padding: 0px 42px 0px 42px;
-}
-
-.card-flight .card-info .card-price .card-price-1 p {
-  color: var(--bs-neutral-600);
-  margin-bottom: 8px;
-}
-
-.card-flight .card-info .card-price .card-price-1::before {
-  content: "";
-  height: 42px;
-  width: 1px;
-  background-color: var(--bs-neutral-200);
-  position: absolute;
-  top: 15px;
-  right: 0px;
-}
-
-.card-flight .card-info .card-price .card-price-1:first-child {
-  padding-left: 0px;
-}
-
-.card-flight .card-info .card-price .card-price-1:last-child {
-  padding-right: 0px;
-}
-
-.card-flight .card-info .card-price .card-price-1:last-child::before {
-  display: none;
-}
-
-.card-flight .card-info .card-meta {
-  margin-top: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card-flight.card-hotel .card-info {
-  padding: 43px 32px;
-  background-color: var(--bs-neutral-0);
-  border-radius: 30px;
-  position: relative;
-  z-index: 2;
-}
-
-.card-flight.card-hotel .card-info .card-title {
-  margin-bottom: 8px;
-  margin-top: 15px;
-}
-
-.card-flight.card-hotel .card-info .card-title a {
-  color: var(--bs-neutral-1000);
-}
-
-.card-flight.card-hotel .card-info .card-title a:hover {
-  color: var(--bs-warning) !important;
-}
-
-.card-flight.card-hotel .card-info .card-program {
-  position: relative;
-}
-
-.card-flight.card-hotel .card-info .card-program .card-location {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 45px;
-}
-
-.card-flight.card-hotel .card-info .card-program .card-location .text-location {
-  /* background: url(../imgs/template/icons/location.svg) no-repeat left center; */
-  padding-left: 20px;
-}
-
-.card-flight.card-hotel .card-info .card-program .card-location .text-star img {
-  margin-left: 2px;
-}
-
-.card-flight.card-hotel .card-info .card-program .card-facitlities {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: -15px;
-  padding-top: 27px;
-  border-top: 1px solid var(--bs-border-color);
-  margin-bottom: 15px;
-}
-
-.card-flight.card-hotel .card-info .card-program .card-facitlities .card-miles,
-.card-flight.card-hotel .card-info .card-program .card-facitlities .card-gear,
-.card-flight.card-hotel .card-info .card-program .card-facitlities .card-fuel,
-.card-flight.card-hotel .card-info .card-program .card-facitlities .card-seat {
-  width: 50%;
-  padding: 0px 0px 0px 30px;
-  margin-bottom: 13px;
-}
-
-/* .card-flight.card-hotel .card-info .card-program .card-facitlities .card-miles {
-  background: url(../imgs/page/homepage2/mile.svg) no-repeat left center;
-}
-
-.card-flight.card-hotel .card-info .card-program .card-facitlities .card-gear {
-  background: url(../imgs/page/homepage2/automatic.svg) no-repeat left center;
-}
-
-.card-flight.card-hotel .card-info .card-program .card-facitlities .card-fuel {
-  background: url(../imgs/page/homepage2/fuel.svg) no-repeat left center;
-}
-
-.card-flight.card-hotel .card-info .card-program .card-facitlities .card-seat {
-  background: url(../imgs/page/homepage2/seat.svg) no-repeat left center;
-} */
-
-.card-flight.card-hotel .card-info .card-program .duration {
-  margin-bottom: 45px;
-}
-
-.card-flight.card-hotel .card-info .card-program .duration .card-price {
-  display: flex;
-  align-items: flex-end;
-}
-
-.card-flight.card-hotel .card-info .card-program .duration .card-price h6 {
-  margin-right: 6px;
-}
-
-.card-flight.card-hotel .card-info .card-program .card-duration-tour {
-  display: flex;
-  align-items: center;
-  margin-bottom: 35px;
-}
-
-.card-flight.card-hotel .card-info .card-program .icon-duration {
-  padding: 0px 20px 0px 22px;
-  /* background: url(../imgs/template/icons/duration.svg) no-repeat left center; */
-}
-
-.card-flight.card-hotel .card-info .card-program .icon-guest {
-  padding: 0px 0px 0px 22px;
-  /* background: url(../imgs/template/icons/guest.svg) no-repeat left center; */
-}
-
-.card-flight.card-hotel .card-info .card-program .endtime {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card-flight.card-hotel .card-info .card-program .endtime .card-price {
-  display: flex;
-  align-items: flex-end;
-}
-
-.card-flight.card-hotel .card-info .card-program .endtime .card-price h6 {
-  margin-right: 6px;
-}
-
-.card-flight.card-hotel .card-info .card-hotel-2-col {
-  display: flex;
-  align-items: center;
-}
-
-.card-flight.card-hotel .card-info .card-hotel-2-col .card-program {
-  padding-right: 30px;
-}
-
-.card-flight.card-hotel .card-info .card-hotel-2-col .card-hotel-price {
-  min-width: 206px;
-}
-
-.card-flight.card-hotel .card-info .card-hotel-2-col .card-hotel-price .box-hotel-price {
-  border: 1px solid var(--bs-border-color);
-  border-radius: 16px;
-  padding: 24px;
-  text-align: center;
-  background-color: var(--bs-background-9);
-}
-
-.card-flight.card-hotel .card-info .card-hotel-2-col .card-hotel-price .box-hotel-price .price-throught {
-  text-decoration: line-through;
-  margin-bottom: 5px;
-}
-
-.card-flight.card-hotel .card-info .card-hotel-2-col .card-hotel-price .box-hotel-price .price-main {
-  margin-bottom: 5px;
-}
-
-.card-flight.card-hotel .card-info .card-hotel-2-col .card-hotel-price .box-hotel-price .card-button {
-  margin-top: 25px;
-}
 
 .card-walking {
   border-radius: 8px;
@@ -4279,10 +3707,6 @@ label {
 .card-vacation .card-info h5 {
   color: var(--bs-neutral-0);
   margin-bottom: 4px;
-}
-
-.card-walking-2 {
-  /* background-image: url(../imgs/page/homepage1/walking2.png); */
 }
 
 .card-news {
@@ -6386,33 +5810,6 @@ label {
   transition-duration: 0.2s;
 }
 
-/* .header .main-menu li.mega-li .mega-menu .mega-menu-inner .list-featured li a.tours {
-  background-image: url(../imgs/template/icons/tour.svg);
-}
-
-.header .main-menu li.mega-li .mega-menu .mega-menu-inner .list-featured li a.activities {
-  background-image: url(../imgs/template/icons/activities.svg);
-}
-
-.header .main-menu li.mega-li .mega-menu .mega-menu-inner .list-featured li a.destinations {
-  background-image: url(../imgs/template/icons/destination.svg);
-}
-
-.header .main-menu li.mega-li .mega-menu .mega-menu-inner .list-featured li a.hotels {
-  background-image: url(../imgs/template/icons/hotel.svg);
-}
-
-.header .main-menu li.mega-li .mega-menu .mega-menu-inner .list-featured li a.rental-car {
-  background-image: url(../imgs/template/icons/rental.svg);
-}
-
-.header .main-menu li.mega-li .mega-menu .mega-menu-inner .list-featured li a.property {
-  background-image: url(../imgs/template/icons/property.svg);
-}
-
-.header .main-menu li.mega-li .mega-menu .mega-menu-inner .list-featured li a.tickets {
-  background-image: url(../imgs/template/icons/ticket.svg);
-} */
 
 .header .main-menu li.mega-li .mega-menu .mega-menu-inner .list-featured li a:hover {
   color: var(--bs-warning) !important;
@@ -9734,11 +9131,6 @@ a.icon-socials:hover svg {
   padding-top: 110px;
 }
 
-.box-flights {
-  padding-top: 90px;
-  padding-bottom: 51px;
-  border-bottom: 1px solid var(--bs-border-color);
-}
 
 .box-category {
   padding-top: 51px;
@@ -10015,33 +9407,6 @@ a.icon-socials:hover svg {
   border-radius: 56px;
 }
 
-.box-list-brand-car {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.box-list-brand-car .item-brand {
-  padding: 15px 25px;
-  background-color: var(--bs-neutral-0);
-  border-radius: 16px;
-  margin-right: 24px;
-  margin-bottom: 24px;
-}
-
-.box-list-brand-car .item-brand img {
-  display: block;
-  max-height: 28px;
-}
-
-.box-list-brand-car .item-brand:last-child {
-  margin-right: 0px;
-}
-
-.box-recent-lauched-car {
-  background-color: var(--bs-background-2);
-  padding: 89px 0px 112px 0px;
-}
 
 .mb-16 {
   margin-bottom: 16px !important;
@@ -10051,9 +9416,6 @@ a.icon-socials:hover svg {
   margin-top: 35px;
 }
 
-.box-list-brand-car {
-  margin-top: 64px;
-}
 
 .box-why-travel-us {
   padding: 30px 0px 100px 0px;
@@ -10218,19 +9580,6 @@ a.icon-socials:hover svg {
   justify-content: space-between;
 }
 
-.box-flights-type-2 {
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
-
-.box-flights-type-2 .card-flight {
-  min-width: auto;
-  max-width: 100%;
-}
-
-.box-flights-type-2 .card-flight .card-image {
-  max-width: 223px;
-}
 
 .swiper-pagination-style-1 {
   text-align: left;
@@ -11467,15 +10816,6 @@ ul.list-steps li:hover .step-no span {
   margin-bottom: 13px;
 }
 
-.box-best-car {
-  padding: 59px 0px 29px 0px;
-  background-color: var(--bs-background-1000);
-}
-
-.title-best-car {
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
 
 .box-faqs-type-3 {
   border-bottom-width: 0px;
@@ -11854,90 +11194,7 @@ h1 span {
   text-align: center;
 }
 
-.box-list-flights {
-  position: relative;
-}
 
-.box-list-flights .item-flight {
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--bs-border-color);
-  border-radius: 8px;
-  background-color: var(--bs-neutral-0);
-  padding: 17px 21px;
-  margin-bottom: 15px;
-  justify-content: space-between;
-}
-
-.box-list-flights .item-flight .flight-route,
-.box-list-flights .item-flight .flight-price,
-.box-list-flights .item-flight .flight-name {
-  display: flex;
-  align-items: center;
-}
-
-.box-list-flights .item-flight .flight-route.flight-route-type-2 {
-  flex-wrap: wrap;
-  max-width: 474px;
-}
-
-.box-list-flights .item-flight .flight-route.flight-route-type-2 .flight-route-1 {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin-top: 34px;
-  margin-bottom: 15px;
-}
-
-.box-list-flights .item-flight .flight-route.flight-route-type-2 .flight-route-2 {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  margin-top: 14px;
-  margin-bottom: 35px;
-}
-
-.box-list-flights .item-flight .flight-route .flight-route-icon {
-  min-width: 24px;
-  height: 24px;
-  margin: 0px 29px;
-  /* background-image: url(../imgs/page/homepage10/route.png); */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.box-list-flights .item-flight .flight-route .flight-name img {
-  width: 48px;
-  margin-right: 12px;
-  display: block;
-  height: 48px;
-}
-
-.box-list-flights .item-flight .flight-route .flight-name .flight-info .time-flight {
-  padding: 0px 0px 0px 20px;
-  /* background-image: url(../imgs/page/homepage10/time.png); */
-  background-repeat: no-repeat;
-  background-position: left center;
-  color: var(--bs-neutral-500);
-}
-
-.box-list-flights .item-flight .flight-route .flight-name .flight-info .time-flight span {
-  color: var(--bs-neutral-1000);
-}
-
-.box-list-flights .item-flight .flight-price .flight-price-1 {
-  border-left: 1px solid var(--bs-border-color);
-  padding: 0px 29px;
-}
-
-.box-list-flights .item-flight .flight-price .flight-price-2 {
-  border-left: 1px solid var(--bs-border-color);
-  padding: 0px 29px;
-}
-
-.box-list-flights .item-flight:hover {
-  box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.09);
-}
 
 .box-install-app-3 {
   position: relative;
@@ -11972,7 +11229,6 @@ h1 span {
 .box-title-bestsell {
   display: inline-block;
   padding-right: 230px;
-  /* background-image: url(../imgs/page/homepage10/flight.png); */
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -12028,10 +11284,6 @@ h1 span {
 
 .box-search-advance-home10 .box-search-advance {
   top: -190px;
-}
-
-.box-top-flights {
-  padding: 90px 0px 0px 0px;
 }
 
 .card-testimonial-2 {
@@ -12667,9 +11919,6 @@ h1 span {
   padding-top: 0px;
 }
 
-.box-retal-car-destination-4 {
-  padding-bottom: 30px;
-}
 
 .box-banner-destination-5 {
   position: relative;
@@ -12790,92 +12039,6 @@ h1 span {
   border-bottom: 1px solid var(--bs-border-color);
 }
 
-.box-content-main-hotel {
-  padding-top: 0px;
-  margin: 0px;
-}
-
-.box-content-main-hotel .card-flight {
-  min-width: 100%;
-}
-
-.block-content-hotel {
-  border-bottom: 1px solid var(--bs-border-color);
-}
-
-.box-content-main-hotel-2 {
-  padding: 0px 0px 90px 0px;
-}
-
-.box-grid-hotels .card-flight {
-  max-width: 100%;
-}
-
-.box-grid-hotels .card-flight .card-info {
-  height: 405px;
-}
-
-.box-grid-hotels .card-flight .card-image {
-  height: 405px;
-  max-width: 350px;
-}
-
-.box-grid-hotels .card-flight .tour-rate {
-  margin-bottom: 4px;
-}
-
-.box-grid-hotels .card-flight .card-tags {
-  margin-bottom: 24px;
-}
-
-.box-grid-hotels .card-flight .card-tags .btn-tag-border {
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
-
-.box-grid-hotels .card-flight .card-tags .btn-tag-border:hover {
-  box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.09);
-}
-
-.box-grid-hotels .card-flight .card-facilities {
-  margin-bottom: 24px;
-}
-
-.box-grid-hotels .card-flight .card-facilities .list-tick-green {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.box-grid-hotels .card-flight .card-facilities .list-tick-green li {
-  width: 33.33%;
-  /* background-image: url(../imgs/page/hotel/tick-green.svg); */
-  background-repeat: no-repeat;
-  background-position: left top;
-  padding: 0px 30px 0px 20px;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 500;
-  color: var(--bs-neutral-1000);
-  margin-bottom: 5px;
-}
-
-.box-banner-hotel-detai-2-inner {
-  position: relative;
-  padding: 76px 0px;
-  /* background-image: url(../imgs/page/hotel/banner.png); */
-  background-position: top center;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.box-banner-hotel-detai-2 {
-  background-color: var(--bs-background-1000);
-}
-
 .box-telephone-booking {
   position: relative;
   border-top: 1px solid var(--bs-border-color);
@@ -12934,54 +12097,9 @@ h1 span {
   right: -60px;
 }
 
-.box-banner-hotel-detail {
-  padding-top: 0px;
-}
-
-.box-banner-hotel-detail .item-banner-box {
-  min-height: 600px;
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-.box-banner-hotel-detail .item-banner-box::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  /* background-image: url(../imgs/page/hotel/bg-trans.png); */
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
-
-.box-banner-hotel-detail .item-banner-box .item-banner-box-inner {
-  position: relative;
-  z-index: 2;
-}
-
-.box-banner-hotel-detail .item-banner-box .item-banner-box-inner .list-disc li {
-  color: var(--bs-color-white);
-}
 
 .list-numbers .item-number .image-top {
   margin-bottom: 7px;
-}
-
-.best-room-hotel .card-journey-small .card-info .card-facilities {
-  border-top: 0px;
-  padding-top: 15px;
-}
-
-.best-room-hotel .card-journey-small .card-image {
-  max-height: 247px;
-}
-
-.box-how-it-work-hotel-detail {
-  padding: 90px 0px;
-  position: relative;
 }
 
 .box-banner-left-how {
@@ -12992,39 +12110,9 @@ h1 span {
   z-index: 1;
   max-width: 46%;
   width: 100%;
-  /* background-image: url(../imgs/page/hotel/banner-how.png); */
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.box-hotel-video {
-  padding: 90px 0px 0px 0px;
-}
-
-.box-payments-hotel {
-  padding: 0px;
-}
-
-.box-list-hotels-detail .card-flight .card-image {
-  max-width: 510px;
-  position: relative;
-}
-
-.box-list-hotels-detail .card-flight:nth-of-type(even) .card-info {
-  order: -1 !important;
-  margin-left: 0px;
-  margin-right: -30px;
-}
-
-.box-list-hotels-detail .card-flight:nth-of-type(even) .card-image .wish {
-  left: unset;
-  right: 20px;
-}
-
-.box-testimonials-hotel-detail {
-  padding-bottom: 60px;
-  padding-top: 90px;
 }
 
 .box-vision {
@@ -13331,17 +12419,6 @@ h1 span {
   margin: auto auto auto auto;
 }
 
-/* .block-banner-activities {
-  background-image: url(../imgs/page/activities/banner-activities-1.png);
-}
-
-.block-banner-activities-2 {
-  background-image: url(../imgs/page/activities/banner-activities-2.png);
-}
-
-.block-banner-activities-3 {
-  background-image: url(../imgs/page/activities/banner-activities-3.png);
-} */
 
 .box-grid-property .card-journey-small .card-info {
   padding: 28px 15px 20px 15px;
@@ -13385,71 +12462,6 @@ h1 span {
   background-color: var(--bs-button-bg-2);
   margin: 0px 4px;
 }
-
-.card-property.card-flight.card-hotel .card-info .card-title {
-  margin-bottom: 12px;
-}
-
-.card-property.card-flight.card-hotel .card-facilities {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities {
-  width: 33.33%;
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p {
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding: 0px 0px 0px 30px;
-  margin-bottom: 13px;
-}
-
-/* .card-property.card-flight.card-hotel .card-facilities .item-facilities p.speed {
-  background-image: url(../imgs/page/homepage8/speed.svg);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.gear {
-  background-image: url(../imgs/page/homepage8/engineering.svg);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.fuel {
-  background-image: url(../imgs/page/homepage8/fuel.svg);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.seats {
-  background-image: url(../imgs/page/homepage8/seat.svg);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.room {
-  background-image: url(../imgs/page/homepage9/room.svg);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.pax {
-  background-image: url(../imgs/page/hotel/pax.svg);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.size {
-  background-image: url(../imgs/page/homepage9/size.svg);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.bed {
-  background-image: url(../imgs/page/homepage9/bed.svg);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.bathroom {
-  background-image: url(../imgs/page/homepage9/bathroom.svg);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.parking {
-  background-image: url(../imgs/page/property/parking.png);
-}
-
-.card-property.card-flight.card-hotel .card-facilities .item-facilities p.pet {
-  background-image: url(../imgs/page/property/pet.png);
-} */
 
 .block-banner-property-detail .banner-property-detail-1 {
   width: 100%;
@@ -13590,49 +12602,6 @@ a.link-black:hover svg {
   border-top: 1px solid var(--bs-border-color);
 }
 
-.box-our-services-car {
-  border-top: 1px solid var(--bs-border-color);
-  padding: 90px 0px;
-}
-
-.box-feature-car {
-  padding: 45px 45px 31px 45px;
-  border: 1px solid var(--bs-border-color);
-  background-color: var(--bs-background-card);
-  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.07);
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-.list-feature-car {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0px -7px;
-}
-
-.list-feature-car .item-feature-car {
-  padding: 0px 7px;
-  width: 25%;
-  margin-bottom: 14px;
-}
-
-.list-feature-car .item-feature-car .item-feature-car-inner {
-  display: flex;
-  align-items: center;
-  padding: 14px 16px;
-  border: 1px solid var(--bs-border-color);
-  background-color: var(--bs-background-9);
-  border-radius: 4px;
-}
-
-.list-feature-car .item-feature-car .item-feature-car-inner .feature-image {
-  margin-right: 5px;
-}
-
-.list-feature-car .item-feature-car .item-feature-car-inner .feature-image img {
-  display: block;
-}
 
 .list-checked-green {
   list-style: none;
@@ -13659,32 +12628,6 @@ a.link-black:hover svg {
   margin-bottom: 5px;
 }
 
-.box-logos-car {
-  padding: 50px 0px;
-  border-bottom: 1px solid var(--bs-border-color);
-}
-
-.box-logos-car .item-logo-payment {
-  text-align: center;
-}
-
-.box-logos-car .item-logo-payment img {
-  vertical-align: middle;
-}
-
-.box-logos-car-2 {
-  background-color: var(--bs-neutral-100);
-  padding: 50px 0px;
-}
-
-.box-logos-car-2 .item-logo-payment {
-  text-align: center;
-}
-
-.box-logos-car-2 .item-logo-payment img {
-  vertical-align: middle;
-}
-
 [data-bs-theme=dark] .box-button-book .btn.btn-book {
   color: var(--bs-neutral-0);
 }
@@ -13692,11 +12635,6 @@ a.link-black:hover svg {
 [data-bs-theme=dark] .box-button-book .btn.btn-book svg {
   stroke: var(--bs-neutral-0);
 }
-
-/* 
-.block-banner-car {
-  background-image: url(../imgs/page/car/banner-car.png);
-} */
 
 .block-banner-tour-detail {
   position: relative;
@@ -14371,9 +13309,6 @@ a.link-black:hover svg {
   background-size: cover; */
 }
 
-.box-list-tickets .card-flight {
-  min-width: 100%;
-}
 
 .box-image-book {
   position: relative;
@@ -14502,51 +13437,6 @@ a.link-black:hover svg {
   margin-bottom: 25px;
 }
 
-.item-line-timeline .time-flight {
-  margin-right: 24px;
-}
-
-.item-line-timeline .time-flight .icon-time {
-  /* background: url(../imgs/page/tickets/clock.png) no-repeat left center; */
-  padding: 0px 0px 0px 20px;
-}
-
-.item-info-flight {
-  border: 1px solid var(--bs-border-color);
-  padding: 35px;
-  border-radius: 8px;
-}
-
-.list-flight-facilities {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 25px -15px 0px -15px;
-  list-style: none;
-  padding: 0px;
-}
-
-.list-flight-facilities li {
-  width: 50%;
-  padding: 0px 15px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-  color: var(--bs-neutral-1000);
-}
-
-.list-flight-facilities li svg {
-  fill: var(--bs-neutral-1000);
-  margin-right: 15px;
-}
-
-.box-list-flights-2 {
-  position: relative;
-}
-
-.box-list-flights-2 .item-flight .flight-price {
-  padding-left: 10px;
-}
 
 .text-86-bold {
   font-size: 86px;
@@ -15020,23 +13910,6 @@ a.link-black:hover svg {
   margin-left: 10px;
 }
 
-.box-icon-flight {
-  position: relative;
-  text-align: right;
-}
-
-.box-icon-flight img {
-  display: block;
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-
-.box-icon-flight h6 {
-  text-align: left;
-  max-width: 460px;
-  display: inline-block;
-}
-
 .box-about-video {
   position: relative;
 }
@@ -15388,10 +14261,6 @@ h2 span {
     padding: 20px 16px;
   }
 
-  .box-grid-hotels .card-flight .card-image {
-    max-width: 280px;
-  }
-
   .box-content-info-detail {
     margin-top: -90px;
   }
@@ -15596,19 +14465,7 @@ h2 span {
     max-width: 16.28%;
   }
 
-  .box-grid-hotels .card-flight {
-    flex-wrap: wrap;
-  }
 
-  .box-grid-hotels .card-flight .card-image {
-    height: auto;
-    max-width: 100%;
-  }
-
-  .box-grid-hotels .card-flight .card-info {
-    margin-left: 0px;
-    margin-top: -40px;
-  }
 
   .box-image-vision .image-vision-2 {
     max-width: 160px;
@@ -15622,9 +14479,6 @@ h2 span {
     left: 10px;
   }
 
-  .box-list-hotels-detail .card-flight:nth-of-type(even) .card-info {
-    order: 1 !important;
-  }
 
   .box-content-info-detail {
     margin-top: -60px;
@@ -15644,33 +14498,6 @@ h2 span {
     right: -20px;
   }
 
-  .box-list-flights-2 .item-flight {
-    flex-wrap: wrap;
-  }
-
-  .box-list-flights-2 .item-flight .flight-price {
-    width: 100%;
-    padding-left: 0px;
-  }
-
-  .box-list-flights-2 .item-flight .flight-price .flight-price-1 {
-    width: 50%;
-    padding-left: 0px;
-    border-left: 0px;
-  }
-
-  .box-list-flights-2 .item-flight .flight-price .flight-price-2 {
-    width: 50%;
-  }
-
-  .box-list-flights-2 .item-flight .flight-route.flight-route-type-2 {
-    max-width: 100%;
-  }
-
-  .box-list-flights-2 .item-flight .flight-route.flight-route-type-2 .flight-route-1,
-  .box-list-flights-2 .item-flight .flight-route.flight-route-type-2 .flight-route-2 {
-    justify-content: space-between;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -15968,26 +14795,6 @@ h2 span {
     background-image: none;
   }
 
-  .box-list-flights .item-flight {
-    flex-wrap: wrap;
-  }
-
-  .box-list-flights .item-flight .flight-route {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .box-list-flights .item-flight .flight-price .flight-price-1 {
-    padding-left: 0px;
-    border-left: 0px;
-    padding-right: 10px;
-    text-align: center;
-  }
-
-  .box-list-flights .item-flight .flight-price .flight-price-2 {
-    padding: 0px 0px 0px 20px;
-    text-align: center;
-  }
 
   .box-install-app-3 .block-install-apps {
     background-image: none;
@@ -16181,24 +14988,6 @@ h2 span {
     padding: 12px 10px;
   }
 
-  .card-flight {
-    max-width: 100%;
-    width: 100%;
-    min-width: 100%;
-    flex-wrap: wrap;
-  }
-
-  .card-flight .card-image {
-    max-width: 100%;
-  }
-
-  .card-flight .card-info {
-    padding: 38px 31px;
-    width: calc(100% + 0px);
-    margin-left: 0px;
-    margin-top: -30px;
-  }
-
   .text-unlock {
     display: none;
   }
@@ -16256,9 +15045,6 @@ h2 span {
     max-width: 100%;
   }
 
-  .box-flights-type-2 .card-flight .card-image {
-    max-width: 100%;
-  }
 
   .image-bottom-how {
     display: flex;
@@ -16436,29 +15222,6 @@ h2 span {
     padding: 0px 10px 30px 10px;
   }
 
-  .box-grid-hotels .card-flight .card-image {
-    max-width: 100%;
-  }
-
-  .box-grid-hotels .card-flight .card-info {
-    height: auto;
-  }
-
-  .card-flight.card-hotel .card-info .card-hotel-2-col {
-    flex-wrap: wrap;
-  }
-
-  .card-flight.card-hotel .card-info .card-hotel-2-col .card-program {
-    width: 100%;
-    margin-bottom: 35px;
-  }
-
-  .card-flight.card-hotel .card-info .card-hotel-2-col .card-hotel-price {
-    max-width: 100%;
-    min-width: auto;
-    width: 100%;
-  }
-
   .text-86-bold {
     font-size: 66px;
     line-height: 76px;
@@ -16518,10 +15281,6 @@ h2 span {
 
   .burger-icon {
     top: 0px;
-  }
-
-  .box-grid-hotels .card-flight .card-facilities .list-tick-green li {
-    width: 50%;
   }
 
   .sticky-bar.stick .burger-icon {
@@ -16806,27 +15565,6 @@ h2 span {
     padding-right: 0px;
   }
 
-  .box-list-flights .item-flight .flight-route {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 0px;
-  }
-
-  .box-list-flights .item-flight .flight-price,
-  .box-list-flights .item-flight .flight-name {
-    justify-content: center;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .box-list-flights .item-flight .flight-route .flight-route-icon {
-    margin-bottom: 15px;
-  }
-
-  .flight-button {
-    width: 100%;
-    text-align: center;
-  }
 
   .card-journey-grid-3 .card-info .card-program .endtime .card-prices {
     justify-content: space-between;
@@ -16845,22 +15583,10 @@ h2 span {
     height: 400px;
   }
 
-  .box-hotel-facilities-list .list-numbers .item-number {
-    width: 33.33%;
-    margin-bottom: 25px;
-  }
-
-  .list-flight-facilities li {
-    width: 100%;
-  }
-
   .box-timeline .item-timeline {
     padding-left: 65px;
   }
 
-  .item-info-flight {
-    padding: 20px;
-  }
 
   .box-telephone-booking {
     flex-wrap: wrap;
@@ -16871,14 +15597,6 @@ h2 span {
     margin-bottom: 20px;
   }
 
-  .box-list-flights-2 .item-flight .flight-route.flight-route-type-2 .flight-route-1,
-  .box-list-flights-2 .item-flight .flight-route.flight-route-type-2 .flight-route-2 {
-    flex-wrap: wrap;
-  }
-
-  .box-list-flights-2 .item-flight .flight-route .flight-route-icon {
-    margin: auto auto 15px auto;
-  }
 
   .datepicker table tr td,
   .datepicker table tr th {
@@ -16887,10 +15605,6 @@ h2 span {
 }
 
 @media (max-width: 449.98px) {
-  .card-flight .card-info {
-    padding: 16px 12px;
-  }
-
   .card-news .card-info {
     padding: 25px;
   }
@@ -17058,18 +15772,6 @@ h2 span {
     width: 100%;
   }
 
-  .box-grid-hotels .card-flight .card-facilities .list-tick-green li {
-    width: 100%;
-  }
-
-  .card-flight.card-hotel .card-info .card-program .endtime {
-    flex-wrap: wrap;
-  }
-
-  .card-flight.card-hotel .card-info .card-program .endtime .card-price {
-    width: 100%;
-    margin-bottom: 15px;
-  }
 }
 
 @media (max-width: 339.98px) {
