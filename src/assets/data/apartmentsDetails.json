@@ -279,7 +279,9 @@
     "images": [
       { "path": "assets/images/apartmenImages/banner3.png" },
       { "path": "assets/images/apartmenImages/banner4.png" },
-      { "path": "assets/images/apartmenImages/banner5.png" }
+      { "path": "assets/images/apartmenImages/banner5.png" },
+      { "path": "assets/images/apartmenImages/apertment15.jpg" },
+      { "path": "assets/images/apartmenImages/apertment35.jpg" }
     ],
     "user": {
       "id": 10,
