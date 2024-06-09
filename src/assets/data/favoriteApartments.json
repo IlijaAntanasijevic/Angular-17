@@ -7,7 +7,7 @@
     "totalReviews": 550,
     "rate": 4.25,
     "maxGuest": 6 ,
-    "city": "Amsterdam"
+    "city": "Wien"
 
   },
   {
@@ -28,7 +28,7 @@
     "totalReviews": 350,
     "rate": 4.45,
     "maxGuest": 5,
-    "city": "Amsterdam"
+    "city": "New York"
 
   },
   {
@@ -39,7 +39,7 @@
     "totalReviews": 550,
     "rate": 4.25,
     "maxGuest": 6,
-    "city": "Budva"
+    "city": "Wien"
   },
   {
     "id": 5,
@@ -49,7 +49,7 @@
     "totalReviews": 550,
     "rate": 4.25,
     "maxGuest": 6,
-    "city": "Amsterdam"
+    "city": "London"
      
   },
   {
@@ -60,7 +60,7 @@
     "totalReviews": 550,
     "rate": 4.25,
     "maxGuest": 6 ,
-    "city": "Amsterdam"
+    "city": "Venice"
 
   }
 ]
