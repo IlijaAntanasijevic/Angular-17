@@ -9,21 +9,21 @@
         <div class="col-xl-8 col-lg-8 col-md-12">
           <div class="card-spot card-spot-2 background-card">
             <div class="card-image">
-              <img src="{{top1Destination.imagePath}}" alt="{{top1Destination.name}}">
+              <img src="{{top1Destination?.imagePath}}" alt="{{top1Destination?.name}}">
             </div>
             <div class="card-info-two-col">
               <div class="card-info card-mw background-card wow fadeInUp">
                 <div class="card-left">
                   <div class="card-title">
                     <p class='text-lg-bold neutral-1000'>
-                      {{top1Destination.name}}</p>
+                      {{top1Destination?.name}}</p>
                   </div>
                   <div class="card-desc">
-                    <p class="text-sm neutral-500">{{top1Destination.totalApartments}} Apartments</p>
+                    <p class="text-sm neutral-500">{{top1Destination?.totalApartments}} Apartments</p>
                   </div>
                 </div>
                 <div class="card-right">
-                  <div class="card-button"> <button (click)="searchByDestination(top1Destination.name)">
+                  <div class="card-button"> <button (click)="searchByDestination(top1Destination?.name)">
                       <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011"
                           stroke="" stroke-linecap="round" stroke-linejoin="round"></path>

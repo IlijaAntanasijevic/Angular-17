@@ -20,7 +20,7 @@ export class ApartmentBookingComponent implements OnInit {
   searched: ISearch
   minDate: Date = new Date(new Date().setDate(new Date().getDate() + 1));
 
-  totalGuests: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  totalGuests: number[] = [];
   totalPrice: number = 0;
   totalNights: number | null = null;
   
@@ -40,7 +40,9 @@ export class ApartmentBookingComponent implements OnInit {
 
   ngOnInit(): void {
     this.searched = this.searchService.getData;    
-    console.log(this.searchService.getData);
+    for(let i = 1; i <= this.apartment.maxGuest; i++){
+      this.totalGuests.push(i);
+    }
       
     if(this.searchService.getData){
       this.fillForm(this.searchService.getData)
