@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Test 1",
+    "name": "Cozy Retreat",
     "mainImage": "assets/images/apartmenImages/mainImage1.jpg",
     "price": 48.25,
     "totalReviews": 550,
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "name": "Test 2",
+    "name": "Charming Canal-side",
     "mainImage": "assets/images/apartmenImages/mainImage2.jpg",
     "price": 58.25,
     "totalReviews": 670,
@@ -22,7 +22,7 @@
   },
   {
     "id": 3,
-    "name": "Test 3",
+    "name": "Urban Oasis",
     "mainImage": "assets/images/apartmenImages/mainImage3.jpg",
     "price": 92.25,
     "totalReviews": 350,
@@ -33,7 +33,7 @@
   },
   {
     "id": 4,
-    "name": "Test 4",
+    "name": "Cozy Retreat",
     "mainImage": "assets/images/apartmenImages/mainImage4.jpg",
     "price": 48.25,
     "totalReviews": 550,
@@ -43,7 +43,7 @@
   },
   {
     "id": 5,
-    "name": "Test 5",
+    "name": "Classic Comfort",
     "mainImage": "assets/images/apartmenImages/mainImage5.jpg",
     "price": 48.25,
     "totalReviews": 550,
@@ -54,7 +54,7 @@
   },
   {
     "id": 6,
-    "name": "Test 6",
+    "name": "Serene Escape",
     "mainImage": "assets/images/apartmenImages/mainImage6.jpg",
     "price": 48.25,
     "totalReviews": 550,

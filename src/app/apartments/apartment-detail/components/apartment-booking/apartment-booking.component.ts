@@ -39,7 +39,8 @@ export class ApartmentBookingComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.searched = this.searchService.getData;    
+    this.searched = this.searchService.getData;
+    //Display only the maximum number of guests per apartment
     for(let i = 1; i <= this.apartment.maxGuest; i++){
       this.totalGuests.push(i);
     }
