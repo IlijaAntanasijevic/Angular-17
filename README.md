@@ -14,6 +14,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 # Fake json was used to display the data.
 
+### It's hosted for free on netlify: `https://main--booking-ilija.netlify.app`
+
 
 
 
